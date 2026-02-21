@@ -1,0 +1,2653 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>MC | Eternal Petals Artistry</title>
+
+<!-- CRITICAL: Preload Brand Assets -->
+<link rel="preload" as="image" href="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/botezuri.png?alt=media&token=952e6adf-9bf6-4ada-ac2f-c9de0cb19b3a">
+<link rel="preload" as="image" href="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Ftexts%2F3.png?alt=media&token=0a075be9-3a7d-486b-8577-ff1a56fe4159">
+<link rel="preload" as="image" href="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/paper-style-luxury-background_23-2148985108.jpg?alt=media&token=357f22f1-6a79-4064-b5d2-454f2efcad1b">
+<!-- CRITICAL: Preload Hero & First Slide of every collection -->
+<link rel="preload" as="image" href="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Ftexts%2F3.png?alt=media&token=0a075be9-3a7d-486b-8577-ff1a56fe4159">
+<link rel="preload" as="image" href="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Feedcf612-d4c8-430a-855f-5981d6daca9a.png?alt=media&token=417d6c91-6806-46d4-a1fb-76642d787e7b">
+<link rel="preload" as="image" href="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2FChatGPT%20Image%2012%20feb.%202026%2C%2017_54_13.png?alt=media&token=9f4db92e-1a21-410d-ae88-0f7ae7df41b8">
+<link rel="preload" as="image" href="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Fef565368-bda4-4b16-84cd-c779d36f4799.png?alt=media&token=4fc4bec4-d750-47fe-bb38-9ac63dd43028">
+<link rel="preload" as="image" href="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Fa5c8bff7-a0ab-43a7-9441-f3cd8c16f08c.png?alt=media&token=0a0bfdf5-2cae-4e23-8d11-f2a794790d9a">
+<link rel="preload" as="image" href="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2F53a5fe13-c761-4347-9ea0-eebe804876bb.png?alt=media&token=cc7a387b-0039-4b4d-9143-0e89a272cedb">
+
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2F7.png?alt=media&token=9c293a04-1061-4429-952c-fcff87838896" />
+
+<!-- External Libraries -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    brand: {
+                        softpink: "#FAD0E6",
+                        orchid: "#e9add5",   
+peach: "#fbcbde", 
+                        blue: "#718ce5",     
+                        ice: "#b8f4ff",      
+                        magenta: "#E467DA",
+                        purple: "#9E4FE8",
+                        indigo: "#462AC0",
+                        dark: "#130925",
+                        alabaster: "#FDF2F5"
+                    },
+                },
+                fontFamily: {
+                    serif: ['"Cormorant Garamond"', "serif"],
+                    sans: ['"Montserrat"', "sans-serif"],
+                },
+            },
+        },
+    };
+</script>
+
+<style type="text/css">
+    :root {
+        --soft-pink: #FAD0E6;
+        --orchid: #e9add5;
+peach: "#fbcbde", 
+        --blue: #718ce5;
+        --ice: #b8f4ff;
+        --magenta: #E467DA;
+        --purple: #9E4FE8;
+        --indigo: #462AC0;
+        --dark: #130925;
+        --alabaster: #FDF2F5;
+    }
+
+    /* --- CRITICAL MOBILE FIXES START --- */
+    html, body {
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden; /* This kills the side scroll */
+        margin: 0;
+        padding: 0;
+        -webkit-text-size-adjust: 100%;
+        position: relative;
+    }
+
+    /* Prevent clicks from flashing blue on mobile */
+    * { -webkit-tap-highlight-color: transparent; }
+    /* --- CRITICAL MOBILE FIXES END --- */
+
+body {
+    background-color: transparent; /* Changed from var(--dark) to allow the animated BG to show */
+    color: var(--soft-pink);
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--dark); }
+    ::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 10px; }
+
+    /* Loader Styles */
+    .loader {
+        position: fixed; 
+        inset: 0; 
+        background: radial-gradient(circle at center, #2E1065 0%, #0D071A 100%);
+        z-index: 10000; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        padding: 20px;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* Nav Styles */
+    nav {
+        background: radial-gradient(circle at center, #2E1065 0%, #0D071A 100%);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        transition: padding 0.5s ease;
+        width: 100%; /* Ensure full width */
+        max-width: 100vw;
+    }
+    nav.scrolled {
+        padding-top: 15px !important; 
+        padding-bottom: 15px !important;
+    }
+
+    /* Technical Frames */
+    .showcase-frame {
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        padding: 20px; /* Reduced for mobile */
+        backdrop-filter: blur(15px);
+    }
+    @media (min-width: 768px) {
+        .showcase-frame { padding: 50px; }
+    }
+    .frame-peach::before { border-top: 2px solid var(--orchid); border-left: 2px solid var(--orchid); content: ""; position: absolute; top: -1px; left: -1px; width: 40px; height: 40px; }
+    
+    /* Glows - Fixed to not break mobile width */
+    .glow-soft {
+        position: absolute; 
+        width: 600px; 
+        height: 600px;
+        max-width: 80vw; /* Prevent glow from pushing screen width */
+        filter: blur(150px); 
+        pointer-events: none; 
+        z-index: 0; 
+        opacity: 0.15;
+    }
+
+    /* Indigo Gallery Styles */
+    .indigo-frame {
+        position: relative;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(113, 140, 229, 0.2);
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .indigo-frame::after {
+        content: "";
+        position: absolute;
+        inset: -5px;
+        border: 1px solid rgba(184, 244, 255, 0.1);
+        pointer-events: none;
+        transition: all 0.6s ease;
+    }
+    .indigo-frame:hover {
+        border-color: var(--ice);
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .indigo-frame:hover::after {
+        inset: -12px; border-color: var(--ice); opacity: 0.5;
+    }
+
+    /* Image Containers */
+    .img-container { 
+        overflow: hidden; 
+        position: relative; 
+        border-radius: 4px; 
+        width: 100%;
+        height: 100%;
+    }
+    .img-container img { 
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        transition: transform 2s cubic-bezier(0.16, 1, 0.3, 1);  
+    }
+    .img-container:hover img { transform: scale(1.1); }
+    .text-stroke-blue { -webkit-text-stroke: 1px var(--blue); color: transparent; }
+    .text-stroke-dark { -webkit-text-stroke: 1px var(--dark); color: transparent; }
+
+
+/* --- MOBILE MENU & HAMBURGER --- */
+        .hamburger {
+            width: 30px;
+            height: 20px;
+            position: relative;
+            cursor: pointer;
+            z-index: 70;
+            display: none; 
+        }
+        @media (max-width: 768px) {
+            .hamburger { display: block; }
+        }
+        .hamburger span {
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: var(--soft-pink);
+            border-radius: 9px;
+            left: 0;
+        }
+        .hamburger span:nth-child(1) { top: 0px; }
+        .hamburger span:nth-child(2) { top: 9px; }
+        .hamburger span:nth-child(3) { top: 18px; }
+
+        .mobile-menu {
+            position: fixed;
+            inset: 0;
+            background: var(--dark);
+            z-index: 100; /* Top of everything */
+            transform: translateX(100%);
+            transition: transform 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        
+        /* Links Animation */
+        .mobile-link {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: var(--soft-pink);
+            margin: 1rem 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+        }
+        .mobile-menu.active .mobile-link { opacity: 1; transform: translateY(0); }
+        .mobile-menu.active .mobile-link:nth-child(2) { transition-delay: 0.2s; }
+        .mobile-menu.active .mobile-link:nth-child(3) { transition-delay: 0.3s; }
+        .mobile-menu.active .mobile-link:nth-child(4) { transition-delay: 0.4s; }
+        .mobile-menu.active .mobile-link:nth-child(5) { transition-delay: 0.5s; }
+.mobile-menu.active .mobile-link:nth-child(6) { transition-delay: 0.8s; } /* Add this line */
+
+        .mobile-menu {
+            position: fixed;
+            inset: 0;
+            background: var(--dark);
+            z-index: 40; /* Lower than Nav (50) so Hamburger stays visible */
+            transform: translateX(100%);
+            transition: transform 0.6s cubic-bezier(0.7, 0, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        /* Add this to make the Nav transparent when menu is open */
+        nav.menu-open {
+            background: transparent !important;
+            box-shadow: none !important;
+        }
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        .mobile-link {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: var(--soft-pink);
+            margin: 1rem 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+        }
+        .mobile-menu.active .mobile-link {
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.3s;
+        }
+        /* Stagger delays for menu items */
+        .mobile-menu.active .mobile-link:nth-child(1) { transition-delay: 0.3s; }
+        .mobile-menu.active .mobile-link:nth-child(2) { transition-delay: 0.4s; }
+        .mobile-menu.active .mobile-link:nth-child(3) { transition-delay: 0.5s; }
+        .mobile-menu.active .mobile-link:nth-child(4) { transition-delay: 0.6s; }
+ 
+
+/* Stil pentru Carousel-ul de Recenzii */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
+   /* Stil pentru Carousel-ul cu o singură recenzie */
+#homeReviewsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px; /* Înălțime fixă pentru a evita săriturile de pagină */
+    position: relative;
+    overflow: hidden;
+}
+
+.review-item {
+    width: 100%;
+    max-width: 500px; /* Lățime optimă pentru citit */
+    margin: 0 auto;
+    transition: all 0.8s ease;
+    /* Recenzia va fi centrată și va ocupa tot spațiul containerului */
+}
+
+
+/* --- NEW DESKTOP NAV STYLES --- */
+    .nav-link-desktop {
+        position: relative;
+        color: var(--soft-pink);
+        text-decoration: none;
+        padding-bottom: 5px;
+        transition: color 0.3s ease;
+    }
+    
+    .nav-link-desktop::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--ice);
+        transform-origin: bottom right;
+        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    
+    .nav-link-desktop:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    .nav-link-desktop:hover {
+        color: var(--ice);
+        text-shadow: 0 0 15px rgba(184, 244, 255, 0.4);
+    }
+
+    /* --- NEW MOBILE MENU STYLES --- */
+    .mobile-menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Pushes content to edges */
+        height: 100%;
+        padding-top: 80px; /* Space for close button */
+        padding-bottom: 40px;
+    }
+    
+.mobile-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px; /* Reduced gap slightly */
+        font-family: 'Cormorant Garamond', serif;
+        font-style: italic;
+        font-size: 2rem;
+        color: var(--soft-pink);
+        transition: all 0.3s ease;
+        margin: 0;
+        line-height: 1; /* Keeps lines close together */
+        text-align: center; /* Centers the container */
+    }
+    
+    /* NEW RULE: Ensures multi-line text (like Comenzi Personalizate) is centered */
+    .mobile-item span {
+        text-align: center;
+        display: block;
+    }
+    
+    .mobile-item i {
+        font-size: 1.2rem;
+        color: var(--blue);
+        opacity: 0.7;
+        transition: color 0.3s ease;
+    }
+
+    .mobile-item:hover {
+        transform: scale(1.05);
+        color: var(--magenta);
+    }
+    .mobile-item:hover i {
+        color: var(--magenta);
+    }
+
+
+/* White Outline Text Style */
+    .text-outline-white {
+        -webkit-text-stroke: 2px #ffffff; /* 2px White border */
+        paint-order: stroke fill; /* Ensures the outline sits BEHIND the pink fill */
+    }
+    
+    /* Make it slightly thinner on mobile phones */
+    @media (max-width: 768px) {
+        .text-outline-white {
+            -webkit-text-stroke: 1px #ffffff;
+        }
+    }
+
+
+/* Black Outline for "Petale care" */
+    .text-outline-black {
+        -webkit-text-stroke: 2px black;
+        paint-order: stroke fill; /* Keeps the text readable */
+        text-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Adds depth */
+    }
+
+    /* White Outline for "nu se ofilesc" */
+    .text-outline-white {
+        -webkit-text-stroke: 2px white;
+        paint-order: stroke fill;
+    }
+
+    /* Thinner strokes on mobile */
+    @media (max-width: 768px) {
+        .text-outline-black { -webkit-text-stroke: 1px black; }
+        .text-outline-white { -webkit-text-stroke: 1px white; }
+    }
+
+
+
+/* --- SECTION DIVIDERS --- */
+.section-divider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0; 
+    margin: 0 auto; /* Centers it */
+    z-index: 20;
+    pointer-events: none;
+}
+
+/* The Line (Gradient fades to transparent at ends) */
+.divider-line {
+    height: 1px;
+    width: 150px; /* Mobile width */
+    background: linear-gradient(90deg, transparent 0%, var(--ice) 50%, transparent 100%);
+    opacity: 0.3;
+}
+@media (min-width: 768px) {
+    .divider-line { width: 300px; } /* Desktop width */
+}
+
+/* The Icon in the middle */
+.divider-icon-box {
+    margin: 0 15px;
+    color: var(--magenta);
+    font-size: 10px;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 0 5px var(--magenta));
+}
+
+
+
+/* --- COLLECTION GRID STYLES --- */
+.text-logo-crop {
+    clip-path: inset(0 10% 0 10%); /* Cuts 10% off sides */
+    transform: scale(1.25);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s ease;
+}
+
+.group:hover .text-logo-crop {
+    transform: scale(1.35);
+    filter: drop-shadow(0 0 15px rgba(228, 103, 218, 0.6));
+}
+
+.indigo-frame .text-center {
+    border: none !important;
+}
+
+/* Ensure images fade correctly */
+.slide-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out, transform 2s ease;
+}
+
+@media (min-width: 768px) {
+    .hero-img {
+        padding: 40px;
+        border-radius: 60px;
+        object-fit: contain !important;
+    }
+}
+/* --- ANIMATED BACKGROUND (DRIFT & GHOST LOGIC) --- */
+.ambient-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    background-color: var(--dark);
+}
+
+.bg-grain {
+    position: absolute;
+    inset: 0;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    opacity: 0.07;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.blob-cont {
+    position: absolute;
+    inset: 0;
+    filter: blur(100px); /* Slightly higher blur for smoother "leaving" */
+    z-index: 0;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0; /* Start hidden */
+}
+
+/* Blob 1: Purple (Drifts from Top Left to Center) */
+.blob-1 {
+    top: -20%;
+    left: -20%;
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, var(--purple) 0%, transparent 70%);
+    animation: drift-1 25s infinite ease-in-out;
+}
+
+/* Blob 2: Blue (Drifts from Bottom Right to Center) */
+.blob-2 {
+    bottom: -20%;
+    right: -20%;
+    width: 70vw;
+    height: 70vw;
+    background: radial-gradient(circle, var(--blue) 0%, transparent 70%);
+    animation: drift-2 30s infinite ease-in-out;
+    animation-delay: 2s;
+}
+
+/* Blob 3: Magenta (Appears in center, grows, and leaves) */
+.blob-3 {
+    top: 30%;
+    left: 20%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, var(--magenta) 0%, transparent 70%);
+    animation: drift-3 22s infinite ease-in-out;
+    animation-delay: 5s;
+}
+
+/* --- THE SICK DRIFT KEYFRAMES --- */
+
+/* Blob 1: Drifts in, stays, then moves far left out */
+@keyframes drift-1 {
+    0% { transform: translate(-10%, -10%) scale(1); opacity: 0; }
+    20% { opacity: 0.5; }
+    50% { transform: translate(20%, 20%) scale(1.2); opacity: 0.7; }
+    80% { opacity: 0.5; }
+    100% { transform: translate(-30%, 10%) scale(1); opacity: 0; }
+}
+
+/* Blob 2: Drifts in from bottom, circles, then leaves bottom-right */
+@keyframes drift-2 {
+    0% { transform: translate(10%, 10%) scale(1); opacity: 0; }
+    30% { opacity: 0.4; }
+    60% { transform: translate(-15%, -20%) scale(1.3); opacity: 0.6; }
+    90% { opacity: 0.3; }
+    100% { transform: translate(20%, 20%) scale(1); opacity: 0; }
+}
+
+/* Blob 3: Pulsates in the middle then drifts top-right out */
+@keyframes drift-3 {
+    0% { transform: translate(0, 0) scale(0.5); opacity: 0; }
+    25% { opacity: 0.5; transform: scale(1); }
+    50% { transform: translate(15%, -15%) scale(1.2); opacity: 0.4; }
+    75% { opacity: 0.5; }
+    100% { transform: translate(40%, -40%) scale(0.8); opacity: 0; }
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .blob { filter: blur(60px); }
+    .blob-1, .blob-2, .blob-3 { width: 80vw; height: 80vw; }
+}
+
+
+
+/* --- WHATSAPP BUTTON ANIMATION --- */
+.btn-luxury-anim {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, var(--dark), #2E1065); /* Deep purple gradient */
+    z-index: 1;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* The Light Reflection Sweep */
+.btn-luxury-anim::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.5), 
+        rgba(255, 255, 255, 0.2), 
+        transparent
+    );
+    transform: skewX(-25deg);
+    animation: sheen-sweep 4s infinite; /* Runs every 4 seconds */
+    pointer-events: none;
+}
+
+/* Hover State - Glows Magenta */
+.btn-luxury-anim:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(228, 103, 218, 0.4); /* Magenta Glow */
+    border-color: var(--magenta);
+}
+
+/* Icon Animation */
+.btn-luxury-anim i {
+    animation: whatsapp-wiggle 3s infinite;
+}
+
+/* Keyframes */
+@keyframes sheen-sweep {
+    0% { left: -150%; opacity: 0; }
+    10% { opacity: 1; }
+    20% { left: 150%; opacity: 0; } /* Fast sweep */
+    100% { left: 150%; opacity: 0; } /* Wait period */
+}
+
+@keyframes whatsapp-wiggle {
+    0%, 80%, 100% { transform: rotate(0deg); }
+    85% { transform: rotate(-10deg); }
+    90% { transform: rotate(10deg); }
+    95% { transform: rotate(-10deg); }
+}
+
+
+/* --- COLLECTION PERMANENT SHEEN --- */
+/* 1. Create the light beam */
+.img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%; /* Start off-screen */
+    width: 100%;
+    height: 100%;
+    /* Gradient: Transparent -> White -> Transparent */
+    background: linear-gradient(
+        90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.1), 
+        rgba(255, 255, 255, 0.4), 
+        rgba(255, 255, 255, 0.1), 
+        transparent
+    );
+    transform: skewX(-25deg);
+    z-index: 20;
+    pointer-events: none;
+    /* Run the animation infinitely */
+    animation: collection-sheen 6s infinite ease-in-out;
+}
+
+/* 2. The Animation Keyframes */
+@keyframes collection-sheen {
+    0% { left: -150%; opacity: 0; }
+    20% { opacity: 1; }  /* Brightest point */
+    40% { left: 150%; opacity: 0; } /* Finished sweeping */
+    100% { left: 150%; opacity: 0; } /* Wait period */
+}
+
+/* 3. STAGGER DELAYS (The "Sick" Part) */
+/* This ensures they don't all flash at the exact same time */
+.group:nth-child(1) .img-container::after { animation-delay: 0s; }   /* Mărturii */
+.group:nth-child(2) .img-container::after { animation-delay: 2s; }   /* Valentines */
+.group:nth-child(3) .img-container::after { animation-delay: 4s; }   /* Cadouri */
+.group:nth-child(4) .img-container::after { animation-delay: 1s; }   /* Primăvară */
+.group:nth-child(5) .img-container::after { animation-delay: 3s; }   /* Toamnă */
+.group:nth-child(6) .img-container::after { animation-delay: 5s; }   /* About You */
+
+
+
+/* --- BLUE LUXURY BUTTON (For Reviews) --- */
+.btn-luxury-blue {
+    position: relative;
+    overflow: hidden;
+    /* Deep Blue Gradient */
+    background: linear-gradient(90deg, #0B1120, #172554); 
+    z-index: 1;
+    border: 1px solid rgba(113, 140, 229, 0.3);
+    color: var(--ice); /* Text color */
+    transition: all 0.4s ease;
+    box-shadow: 0 0 25px rgba(113, 140, 229, 0.15);
+    
+    /* Centering */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* The Sheen Animation (Reuses the Keyframes from WhatsApp button) */
+.btn-luxury-blue::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.5), 
+        rgba(255, 255, 255, 0.2), 
+        transparent
+    );
+    transform: skewX(-25deg);
+    animation: sheen-sweep 5s infinite; /* Slightly slower loop */
+    animation-delay: 2.5s; /* Delays it so it doesn't flash at same time as WhatsApp btn */
+    pointer-events: none;
+}
+
+/* Hover Effects */
+.btn-luxury-blue:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 40px rgba(113, 140, 229, 0.6); /* Intense Blue Glow */
+    border-color: var(--ice);
+    color: white;
+    background: linear-gradient(90deg, #172554, #1e3a8a);
+}
+
+/* Icon Animation on Hover */
+.btn-luxury-blue:hover i {
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+}
+
+/* --- FIXED STAR DROP POSITIONING --- */
+.reviews-icon-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px; 
+    height: 40px; /* Increased height to contain the stars inside the container */
+    margin-right: 5px;
+}
+
+.user-icon-anim {
+    font-size: 1.4rem;
+    color: var(--ice);
+    margin-top: 10px; /* Push user down to make room for stars */
+}
+
+.stars-wrapper {
+    position: absolute;
+    top: 2px; /* Pulls stars down closer to the icon head */
+    left: 50%;
+    transform: translateX(-50%); /* Centers stars perfectly over the icon */
+    display: flex;
+    gap: 2px;
+}
+
+.stars-wrapper i {
+    font-size: 8px; /* Slightly larger for better visibility */
+    color: var(--magenta);
+    opacity: 0;
+    transform: translateY(-5px) scale(0);
+    filter: drop-shadow(0 0 5px var(--magenta));
+    animation: star-sequence 4s infinite;
+}
+
+/* Same star-sequence timing */
+.stars-wrapper i:nth-child(1) { animation-delay: 0.2s; }
+.stars-wrapper i:nth-child(2) { animation-delay: 0.4s; }
+.stars-wrapper i:nth-child(3) { animation-delay: 0.6s; }
+.stars-wrapper i:nth-child(4) { animation-delay: 0.8s; }
+.stars-wrapper i:nth-child(5) { animation-delay: 1.0s; }
+
+@keyframes star-sequence {
+    0%, 10% { opacity: 0; transform: translateY(-5px) scale(0); }
+    15% { opacity: 1; transform: translateY(0) scale(1.3); } 
+    20% { transform: scale(1); } 
+    80% { opacity: 1; transform: translateY(0) scale(1); }
+    90%, 100% { opacity: 0; transform: translateY(3px) scale(0); }
+}
+
+/* Enhance the Blue Button to match WhatsApp Luxury exactly */
+.btn-luxury-blue {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, #0B1120, #1E3A8A); /* Slightly brighter deep blue */
+    z-index: 1;
+    border: 1px solid rgba(113, 140, 229, 0.4);
+    box-shadow: 0 0 20px rgba(113, 140, 229, 0.2);
+    transition: all 0.4s ease;
+}
+
+.btn-luxury-blue::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), rgba(255,255,255,0.5), rgba(255,255,255,0.2), transparent);
+    transform: skewX(-25deg);
+    animation: sheen-sweep 4s infinite; /* Same timing as WhatsApp */
+}
+
+.btn-luxury-blue:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(113, 140, 229, 0.5);
+    border-color: var(--ice);
+}
+
+
+
+/* --- UPDATED LUXURY BADGE (PURPLE THEME) --- */
+.btn-review-badge {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 35px 45px;
+    min-width: 280px;
+    gap: 15px;
+    /* Matches WhatsApp Button Exactly */
+    background: linear-gradient(90deg, var(--dark), #2E1065) !important;
+    border: 1px solid rgba(228, 103, 218, 0.2) !important;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
+/* Luxury Sheen (White sweep) */
+.btn-review-badge::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.2), 
+        rgba(255, 255, 255, 0.5), 
+        rgba(255, 255, 255, 0.2), 
+        transparent
+    );
+    transform: skewX(-25deg);
+    animation: sheen-sweep 5s infinite;
+    pointer-events: none;
+}
+
+/* Hover State - Glows Magenta like the rest of the site */
+.btn-review-badge:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(228, 103, 218, 0.3);
+    border-color: var(--magenta) !important;
+}
+
+/* LOCK ICONS (No shifting on hover) */
+.btn-review-badge:hover i, 
+.btn-review-badge:hover span {
+    transform: none !important;
+}
+
+/* --- STAR SEQUENCE (1 BY 1) --- */
+.badge-stars-wrapper {
+    display: flex;
+    gap: 6px;
+    height: 15px;
+}
+
+.badge-stars-wrapper i {
+    font-size: 10px;
+    color: var(--magenta);
+    opacity: 0;
+    filter: drop-shadow(0 0 5px var(--magenta));
+    /* Only apply name, duration and timing here */
+    animation-name: star-sequence-vertical;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Staggered Delays for 1-by-1 effect */
+.badge-stars-wrapper i:nth-child(1) { animation-delay: 0.2s; }
+.badge-stars-wrapper i:nth-child(2) { animation-delay: 0.4s; }
+.badge-stars-wrapper i:nth-child(3) { animation-delay: 0.6s; }
+.badge-stars-wrapper i:nth-child(4) { animation-delay: 0.8s; }
+.badge-stars-wrapper i:nth-child(5) { animation-delay: 1.0s; }
+
+@keyframes star-sequence-vertical {
+    0%, 10% { opacity: 0; transform: translateY(-10px) scale(0); }
+    20% { opacity: 1; transform: translateY(0) scale(1.4); } 
+    25% { transform: scale(1); } 
+    80% { opacity: 1; transform: translateY(0) scale(1); }
+    90%, 100% { opacity: 0; transform: translateY(5px) scale(0); }
+}
+
+.badge-user-icon {
+    font-size: 2.2rem;
+    color: var(--ice);
+    filter: drop-shadow(0 0 10px rgba(184, 244, 255, 0.4));
+}
+
+.badge-text {
+    color: var(--ice);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 10px;
+}
+
+
+#petal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5; /* Behind content, above background */
+    overflow: hidden;
+    perspective: 1200px;
+}
+
+.petal {
+    position: absolute;
+    pointer-events: none;
+    will-change: transform;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0; /* Start hidden for fade-in */
+}
+
+
+/* Enable independent movement for titles */
+.float-text {
+    display: inline-block;
+    will-change: transform;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+}
+
+
+
+.bespoke-paper-bg {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/paper-style-luxury-background_23-2148985108.jpg?alt=media&token=357f22f1-6a79-4064-b5d2-454f2efcad1b');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Optional: Subtle darkened edges so the section blends better with the rest of the site */
+.bespoke-paper-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, transparent 40%, rgba(0,0,0,0.05) 100%);
+    pointer-events: none;
+}
+
+/* FORCE GPU FOR SMOOTH SCROLLING */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix mobile lag by optimizing expensive CSS properties */
+@media (max-width: 768px) {
+    /* 1. Remove blur filters on mobile (the main cause of lag) */
+    .glow-soft { display: none !important; }
+    
+    /* 2. Disable complex backdrop blurs on nav and frames */
+    nav, .showcase-frame, .indigo-frame, .mobile-menu {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background-color: rgba(19, 9, 37, 0.98) !important; /* Solid color is 100x faster */
+    }
+
+    /* 3. Hardware acceleration for sliding images */
+    .slide-img {
+        will-change: opacity;
+        transform: translateZ(0); /* Forces GPU render */
+    }
+}
+
+
+
+/* Disable all scroll-hide states */
+[data-reveal], .reveal-item, .reveal-on-load {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+}
+
+/* Optional: Keep the hover effects but remove the entrance animations */
+.reveal-item {
+    transition: transform 0.3s ease !important;
+}
+
+
+
+/* NEON FLICKER EFFECT */
+.neon-text {
+    color: #fff;
+    text-shadow: 
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px var(--magenta),
+        0 0 82px var(--magenta),
+        0 0 92px var(--magenta),
+        0 0 102px var(--magenta),
+        0 0 151px var(--magenta);
+}
+
+.flicker-slow {
+    animation: flicker 4s linear infinite;
+}
+
+.flicker-fast {
+    animation: flicker 0.5s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px var(--magenta),
+            0 0 80px var(--magenta);
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+        opacity: 0.2;
+    }
+}
+
+
+#polaroid-img {
+    will-change: opacity;
+    /* This ensures the containment doesn't show background color during switch */
+    background-color: white; 
+}
+
+/* Optional: Add a slight "Floating" animation to the whole frame */
+@keyframes polaroid-float {
+    0%, 100% { transform: rotate(5deg) translateY(0); }
+    50% { transform: rotate(4deg) translateY(-10px); }
+}
+
+.group\/polaroid {
+    animation: polaroid-float 6s ease-in-out infinite;
+}
+
+
+
+
+/* THE LUXURY LENS FILTER */
+#polaroid-display {
+    /* 1. Unify the colors: slight warm tint and boosted contrast */
+    filter: sepia(10%) contrast(110%) brightness(105%);
+    /* 2. Soften the edges to make them look dreamy */
+    box-shadow: inset 0 0 40px rgba(255,255,255,0.3);
+    /* 3. The smooth zoom logic */
+    transform: scale(1);
+    transition: opacity 1s ease-in-out, transform 8s linear;
+}
+
+/* When the image is visible, start a very slow zoom */
+#polaroid-display.zoom-in {
+    transform: scale(1.15);
+}
+
+/* Add a "Light Leak" effect over the photo */
+.polaroid-glare {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, transparent 50%, rgba(228,103,218,0.1) 100%);
+    pointer-events: none;
+    z-index: 5;
+}
+
+
+
+/* --- 3D BOOK ANIMATION (UPDATED FOR 3 PAGES) --- */
+.book-container {
+    perspective: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px; /* Visual centering adjustment */
+}
+
+.book {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transform: rotateY(-20deg) rotateX(10deg);
+}
+
+/* OPEN STATE (Desktop shifts right) */
+.book.open {
+    transform: rotateY(0deg) rotateX(0deg) translateX(50px);
+    z-index: 50;
+}
+
+/* COVER STYLES */
+.book-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #2E1065 0%, #130925 100%);
+    border: 2px solid rgba(228, 103, 218, 0.3);
+    border-radius: 4px 15px 15px 4px;
+    transform-origin: left;
+    /* 2s duration matches audio sync */
+    transition: transform 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    z-index: 50; /* Top of stack so it covers pages */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden; /* Crucial: Hides cover when opened */
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Open Cover Transform */
+.book.open .book-cover {
+    transform: rotateY(-160deg);
+}
+
+/* --- PAGE STYLING (Common) --- */
+.book-page {
+    position: absolute;
+    width: 96%;
+    height: 96%;
+    top: 2%;
+    left: 2%;
+    background: #FAF9F6;
+    border-radius: 2px 10px 10px 2px;
+    padding: 2rem 1.5rem;
+    color: #130925;
+    box-shadow: inset 3px 0 10px rgba(0,0,0,0.1);
+    
+    /* 3D Flip Logic */
+    transform-origin: left center;
+    transition: transform 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    backface-visibility: hidden; /* Hides the page when flipped */
+    overflow: hidden; /* Prevents text from spilling out */
+}
+
+/* --- PAGE LAYERING (Stack Order) --- */
+.page-1 { z-index: 30; } /* Top Page */
+.page-2 { z-index: 20; } /* Middle Page */
+.page-3 { z-index: 10; } /* Bottom Page */
+
+/* --- FLIP ANIMATIONS --- */
+/* When .flip-1 is added, Page 1 rotates */
+.book.flip-1 .page-1 {
+    transform: rotateY(-180deg);
+}
+
+/* When .flip-2 is added, Page 2 rotates */
+.book.flip-2 .page-2 {
+    transform: rotateY(-180deg);
+}
+
+/* --- MOBILE SPECIFIC FIXES --- */
+@media (max-width: 768px) {
+    .book { 
+        width: 85vw;       
+        max-width: 320px; 
+        height: 520px; /* Taller height to fit text + image */
+    }
+
+    /* Force perfect center on mobile open (No translateX) */
+    .book.open { 
+        transform: rotateY(0deg) rotateX(0deg) translateX(0); 
+    }
+    
+    .book-page {
+        padding: 1.5rem 1rem;
+    }
+    
+    /* Font adjustments for readability */
+    .book-page p {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+    }
+    
+    .book-page h4 {
+        margin-top: 10px;
+        font-size: 1.3rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+
+<!-- ABOUT ME BOOK MODAL -->
+<div id="aboutModal" class="fixed inset-0 z-[250] hidden flex items-center justify-center p-4">
+    <div class="absolute inset-0 bg-brand-dark/95 backdrop-blur-2xl" onclick="closeAboutBook()"></div>
+    
+    <button onclick="closeAboutBook()" class="absolute top-6 right-6 z-[300] text-white/50 hover:text-brand-magenta transition-all">
+        <i class="fa-solid fa-xmark text-4xl"></i>
+    </button>
+
+    <div class="book-container">
+<div id="theBook" class="book">
+    <!-- FRONT COVER -->
+    <div class="book-cover">
+        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/botezuri.png?alt=media&token=952e6adf-9bf6-4ada-ac2f-c9de0cb19b3a" class="w-32 mb-6 opacity-80" alt="Logo">
+        <h3 class="neon-text font-serif italic text-2xl text-center">Povestea <br> Mea</h3>
+        <p class="text-[8px] uppercase tracking-[0.4em] text-brand-blue/60 mt-10">Ascultă Povestea</p>
+    </div>
+
+    <!-- PAGE 3 (Bottom Layer - Revealed Last) -->
+    <div class="book-page page-3">
+        <div class="h-full flex flex-col justify-center text-center">
+            <h4 class="font-serif italic text-xl mb-6 text-brand-magenta">Vă Mulțumesc</h4>
+            <p class="text-[12px] md:text-[14px] leading-relaxed font-medium opacity-90 italic">
+                "Mulțumesc că ați ascultat și sper ca florile mele să aducă bucurie și frumusețe în fiecare zi. <br><br>
+                Fiecare creație este făcută cu dragoste, doar pentru voi."
+            </p>
+            <div class="mt-8 text-[9px] uppercase tracking-widest opacity-50">Handmade by Mary</div>
+        </div>
+    </div>
+
+    <!-- PAGE 2 (Middle Layer - Revealed at 40s) -->
+    <div class="book-page page-2">
+        <div class="h-full flex flex-col">
+            <div class="space-y-4 text-justify">
+                <p class="text-[11px] md:text-[12px] leading-relaxed font-medium opacity-80">
+                    Creez buchete și suveniruri pentru momente speciale – pentru nunți, aniversări, zile de naștere sau pur și simplu pentru cei dragi, atunci când vrei să le arăți cât de mult îi apreciezi.
+                </p>
+                <p class="text-[11px] md:text-[12px] leading-relaxed font-medium opacity-80">
+                    Tot ce fac este realizat cu dragoste, manual, fără grabă, pentru că știu că doar așa poți simți diferența între un cadou făcut cu suflet și unul obișnuit.
+                </p>
+                <p class="text-[11px] md:text-[12px] leading-relaxed font-medium opacity-80">
+                    Îmi doresc ca fiecare buchet să fie mai mult decât un obiect decorativ – să fie o experiență, o bucurie vizuală și emoțională.
+                </p>
+            </div>
+            <p class="mt-auto text-[9px] text-center text-brand-magenta/60 italic animate-pulse">
+                ... urmează ultima parte ...
+            </p>
+        </div>
+    </div>
+
+    <!-- PAGE 1 (Top Layer - Flips at 40s) -->
+    <div class="book-page page-1">
+        <div class="h-full flex flex-col">
+            <h4 class="font-serif italic text-xl md:text-2xl border-b border-black/10 pb-2 mb-4 text-center">Hanci Maria</h4>
+            
+            <div class="space-y-4 text-justify">
+                <p class="text-[11px] md:text-[12px] leading-relaxed font-medium opacity-80">
+                    Salut! Eu sunt Hanci Maria și sunt pasionată de arta handmade. În atelierul meu, fiecare floare pe care o creez este făcută manual, petală cu petală, cu multă răbdare și atenție la detalii.
+                </p>
+                <p class="text-[11px] md:text-[12px] leading-relaxed font-medium opacity-80">
+                    Fiecare buchet sau obiect decorativ este o mică poveste pe care o creez cu suflet, combinând tehnici tradiționale cu un design modern, ca să iasă ceva unic și special.
+                </p>
+                <p class="text-[11px] md:text-[12px] leading-relaxed font-medium opacity-80">
+                    Îmi place să cred că lucrurile pe care le fac nu sunt doar flori din săpun. Ele sunt cadouri care transmit emoție, care aduc bucurie și care rămân o amintire.
+                </p>
+            </div>
+            
+            <p class="mt-auto text-[9px] text-center text-brand-magenta/60 italic animate-pulse">
+                ... pagina se va întoarce automat ...
+            </p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<!-- PRODUCT PREVIEW MODAL (MOBILE FIXED) -->
+<div id="productModal" class="fixed inset-0 z-[200] hidden flex items-center justify-center px-2 py-4 md:p-10">
+    <!-- Dark blurred backdrop -->
+    <div class="absolute inset-0 bg-brand-dark/90 backdrop-blur-xl" onclick="closeProductModal()"></div>
+    
+    <!-- Modal Container: Added overflow-y-auto for mobile -->
+    <div class="relative bg-[#130925] border border-white/10 w-full max-w-5xl max-h-[95vh] overflow-y-auto md:overflow-hidden flex flex-col md:flex-row rounded-2xl shadow-[0_0_100px_rgba(0,0,0,0.8)] transform transition-all duration-500 scale-95 opacity-0" id="modalContent">
+        
+        <!-- CLOSE BUTTON -->
+        <button onclick="closeProductModal()" class="absolute top-4 right-4 z-50 w-10 h-10 bg-black/50 text-white rounded-full flex items-center justify-center hover:bg-brand-magenta transition-colors">
+            <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+
+        <!-- LEFT: Image View (Reduced height on mobile to save space) -->
+        <div class="w-full md:w-1/2 h-[35vh] md:h-auto bg-[#1a0f2e] flex items-center justify-center p-6 md:p-10">
+            <img id="modalProductImg" src="" class="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]" alt="Preview">
+        </div>
+
+        <!-- RIGHT: Details -->
+        <div class="w-full md:w-1/2 p-6 md:p-12 flex flex-col justify-center bg-[#0D071A]">
+            <span class="text-brand-blue text-[10px] uppercase tracking-[0.5em] mb-2 font-bold">Ediție Limitată</span>
+            <h2 class="font-serif text-3xl md:text-5xl text-white italic mb-4 leading-tight">Creație Artizanală</h2>
+            
+            <div class="flex items-center gap-4 mb-6">
+                <span class="text-brand-magenta text-xl md:text-2xl font-serif">Personalizat</span>
+                <div class="h-[1px] flex-1 bg-white/10"></div>
+            </div>
+
+            <ul class="space-y-3 mb-8 text-brand-ice/70 text-xs md:text-base font-light">
+                <li class="flex items-start gap-3">
+                    <i class="fa-solid fa-circle-check text-brand-magenta mt-1 text-[10px]"></i>
+                    <span>Modelat manual din ingrediente premium și ceară naturală.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <i class="fa-solid fa-circle-check text-brand-magenta mt-1 text-[10px]"></i>
+                    <span>Design unic, realizat special pentru tine.</span>
+                </li>
+            </ul>
+
+            <!-- Order Button (Now visible and priority) -->
+            <div class="mt-auto">
+                <a id="modalWhatsAppBtn" href="#" target="_blank" 
+                   class="btn-luxury-anim w-full py-4 md:py-5 rounded-full flex items-center justify-center gap-4 text-[10px] md:text-[11px] font-bold uppercase tracking-[0.3em] text-white">
+                    <i class="fa-brands fa-whatsapp text-xl md:text-2xl"></i>
+                    <span>Comandă pe WhatsApp</span>
+                </a>
+                <p class="text-center mt-4 text-[8px] uppercase tracking-widest text-white/20">Livrare în toată România</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="petal-container"></div>
+<!-- ANIMATED BACKGROUND WRAPPER -->
+<div class="ambient-bg">
+    <div class="bg-grain"></div>
+    <div class="blob-cont">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+</div>
+
+
+ 
+<!-- AUTH MODAL -->
+<div id="authModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center px-4">
+    <div class="absolute inset-0 bg-brand-dark/90 backdrop-blur-md" onclick="toggleAuthModal()"></div>
+    
+    <div class="relative bg-[#1a0f2e] border border-brand-blue/20 p-8 md:p-12 w-full max-w-md rounded-sm shadow-2xl">
+        <button onclick="toggleAuthModal()" class="absolute top-4 right-4 text-brand-blue/50 hover:text-brand-ice">
+            <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+
+        <h2 id="auth-title" class="text-3xl font-serif text-brand-ice mb-8 text-center italic">Autentificare</h2>
+        
+        <form onsubmit="authFunctions.handleEmailAuth(event)" class="space-y-6">
+            <div>
+                <label class="block text-[10px] uppercase tracking-widest text-brand-blue/50 mb-2">Email</label>
+                <input type="email" id="auth-email" required class="w-full bg-brand-dark/50 border border-brand-blue/10 px-4 py-3 text-brand-ice focus:border-brand-magenta outline-none transition-all">
+            </div>
+            <div>
+                <label class="block text-[10px] uppercase tracking-widest text-brand-blue/50 mb-2">Parolă</label>
+                <input type="password" id="auth-pass" required class="w-full bg-brand-dark/50 border border-brand-blue/10 px-4 py-3 text-brand-ice focus:border-brand-magenta outline-none transition-all">
+            </div>
+            
+            <button type="submit" class="w-full bg-brand-magenta py-4 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-brand-purple transition-all shadow-lg">
+                Continuă
+            </button>
+        </form>
+
+        <div class="relative my-8 text-center">
+            <span class="absolute inset-0 flex items-center"><span class="w-full border-t border-brand-blue/10"></span></span>
+            <span class="relative bg-[#1a0f2e] px-4 text-[9px] uppercase tracking-widest text-brand-blue/30">sau</span>
+        </div>
+
+        <button onclick="authFunctions.loginWithGoogle()" class="w-full border border-brand-blue/20 py-4 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-brand-blue/10 transition-all flex items-center justify-center gap-3 text-brand-ice">
+            <i class="fa-brands fa-google text-lg"></i>
+            Intră cu Google
+        </button>
+
+        <p class="mt-8 text-center text-[10px] tracking-widest text-brand-blue/40 uppercase">
+            Nu ai cont? <button onclick="toggleAuthMode()" id="auth-toggle-btn" class="text-brand-ice border-b border-brand-ice/20">Creează Cont Nou</button>
+        </p>
+    </div>
+</div>
+<!-- LOADER -->
+<div class="loader">
+    <img 
+        src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/botezuri.png?alt=media&token=952e6adf-9bf6-4ada-ac2f-c9de0cb19b3a" 
+        id="loader-logo" 
+        class="w-80 md:w-[450px] opacity-0 drop-shadow-2xl" 
+        alt="MC Logo" 
+    />
+</div>
+
+<!-- NAV ACTUALIZAT: Mai subțire pe mobil -->
+<nav class="fixed w-full z-50 px-6 md:px-10 py-3 md:py-6 transition-all duration-500 flex items-center justify-between bg-brand-peach text-brand-dark shadow-none" id="main-nav">    <!-- 1. Logo (Left) -->
+    <div class="w-32 md:w-44 flex-shrink-0">
+        <a href="#home">
+            <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/botezuri.png?alt=media&token=952e6adf-9bf6-4ada-ac2f-c9de0cb19b3a" 
+                 class="h-10 md:h-12 w-auto object-contain hover:opacity-80 transition-opacity" alt="MC Logo" />
+        </a>
+    </div>
+    
+    <!-- 2. Desktop Links (Center) -->
+    <div class="hidden md:flex flex-1 justify-center items-center gap-12 text-[10px] uppercase tracking-[0.2em] font-medium">
+        <a href="#home" class="nav-link-desktop">Acasă</a>
+        <a href="#philosophy" class="nav-link-desktop">Biografie</a>
+        <a href="Colecții.html" class="nav-link-desktop">Colecții</a>
+        <a href="tombola.html" class="nav-link-desktop text-brand-blue">Tombolă</a>
+        <a href="#bespoke" class="nav-link-desktop text-brand-magenta">Comenzi Personalizate</a>
+    </div>
+
+    <!-- 3. Auth Button + Hamburger (Right) -->
+    <div class="w-32 md:w-44 flex justify-end items-center gap-6 flex-shrink-0">
+        <button onclick="handleAccountClick()" class="login-trigger-text hidden md:flex items-center gap-2 text-[9px] font-bold tracking-[0.2em] uppercase text-brand-ice/80 hover:text-white transition-colors group">
+            <i class="fa-regular fa-user text-xs group-hover:text-brand-magenta transition-colors"></i>
+            <span>Log In</span>
+        </button>
+
+        <div class="hamburger md:hidden group cursor-pointer" onclick="toggleMenu()">
+            <span class="group-hover:bg-brand-magenta transition-colors"></span>
+            <span class="group-hover:bg-brand-magenta transition-colors"></span>
+            <span class="group-hover:bg-brand-magenta transition-colors"></span>
+        </div>
+    </div>
+</nav>
+
+
+<div id="authModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center px-4">
+    <div class="absolute inset-0 bg-brand-dark/90 backdrop-blur-md" onclick="toggleAuthModal()"></div>
+    <div class="relative bg-[#1a0f2e] border border-brand-blue/20 p-8 md:p-12 w-full max-w-md rounded-sm shadow-2xl">
+        <button onclick="toggleAuthModal()" class="absolute top-4 right-4 text-brand-blue/50 hover:text-brand-ice"><i class="fa-solid fa-xmark text-2xl"></i></button>
+        <h2 id="auth-title" class="text-3xl font-serif text-brand-ice mb-8 text-center italic">Autentificare</h2>
+        <form id="authForm" class="space-y-6">
+            <input type="email" id="auth-email" placeholder="Email" required class="w-full bg-brand-dark/50 border border-brand-blue/10 px-4 py-3 text-brand-ice outline-none focus:border-brand-magenta">
+            <input type="password" id="auth-pass" placeholder="Parolă" required class="w-full bg-brand-dark/50 border border-brand-blue/10 px-4 py-3 text-brand-ice outline-none focus:border-brand-magenta">
+            <button type="submit" class="w-full bg-brand-magenta py-4 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-brand-purple transition-all">Continuă</button>
+        </form>
+        <div class="my-6 text-center text-[9px] text-brand-blue/30 uppercase tracking-widest">sau</div>
+        <button onclick="window.authFunctions.loginWithGoogle()" class="w-full border border-brand-blue/20 py-4 text-[10px] font-bold uppercase tracking-[0.3em] hover:bg-brand-blue/10 transition-all flex items-center justify-center gap-3 text-brand-ice">
+            <i class="fa-brands fa-google"></i> Intră cu Google
+        </button>
+        <p class="mt-8 text-center text-[10px] tracking-widest text-brand-blue/40 uppercase">
+            Nu ai cont? <button onclick="toggleAuthMode()" id="auth-toggle-btn" class="text-brand-ice border-b border-brand-ice/20">Creează Cont</button>
+        </p>
+    </div>
+</div>
+
+
+<!-- USER PROFILE MODAL -->
+<div id="userModal" class="fixed inset-0 z-[110] hidden flex items-center justify-center px-4">
+    <div class="absolute inset-0 bg-brand-dark/95 backdrop-blur-xl" onclick="toggleUserModal()"></div>
+    <div class="relative bg-[#1a0f2e] border border-brand-blue/20 p-10 w-full max-w-sm rounded-lg shadow-2xl text-center">
+        <div class="relative w-24 h-24 mx-auto mb-6">
+            <div class="absolute inset-0 bg-brand-magenta blur-2xl opacity-20 rounded-full"></div>
+            <img id="user-img" src="" class="relative w-full h-full rounded-full border-2 border-brand-magenta object-cover shadow-2xl">
+        </div>
+        <h3 id="user-name" class="text-brand-ice font-serif text-2xl mb-1 italic">Utilizator</h3>
+        <p id="user-email" class="text-brand-blue/50 text-[10px] uppercase tracking-widest mb-8">email@exemplu.com</p>
+        
+        <div class="space-y-4">
+            <button onclick="window.authFunctions.logout()" class="w-full bg-transparent border border-red-500/30 text-red-400 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-red-500 hover:text-white transition-all rounded-sm">
+                Log Out
+            </button>
+            <button onclick="toggleUserModal()" class="w-full text-brand-blue/40 text-[9px] uppercase tracking-widest hover:text-brand-ice">Închide</button>
+        </div>
+    </div>
+</div>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu" id="mobileMenu">
+    <!-- Close Button (X) -->
+    <button onclick="toggleMenu()" class="absolute top-6 right-6 p-4 text-brand-softpink hover:text-brand-magenta hover:rotate-90 transition-all duration-500 z-50">
+        <i class="fa-solid fa-xmark text-3xl"></i>
+    </button>
+
+    <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+     
+    <!-- Main Container -->
+    <div class="mobile-menu-container w-full h-full flex flex-col justify-between pt-20 pb-10">
+        
+        <!-- MIDDLE: Navigation Links -->
+        <div class="flex flex-col gap-5 items-center justify-center flex-grow">
+            
+            <a href="#home" class="mobile-item" onclick="toggleMenu()">
+                <i class="fa-solid fa-house-chimney"></i>
+                <span>Acasă</span>
+            </a>
+
+            <a href="#philosophy" class="mobile-item" onclick="toggleMenu()">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <span>Biografie</span>
+            </a>
+
+            <a href="Colecții.html" class="mobile-item" onclick="toggleMenu()">
+                <i class="fa-solid fa-gem"></i>
+                <span>Colecții</span>
+            </a>
+
+            <a href="tombola.html" class="mobile-item" onclick="toggleMenu()">
+                <i class="fa-solid fa-ticket text-brand-blue"></i>
+                <span class="text-brand-blue">Tombolă</span>
+            </a>
+
+            <!-- ADD THIS NEW LINK HERE -->
+            <a href="Comunity.html" class="mobile-item" onclick="toggleMenu()">
+                <i class="fa-solid fa-users text-brand-blue"></i>
+                <span>Comunitate</span>
+            </a>
+
+            <!-- UPDATED: Comenzi Personalizate (Centered Text) -->
+            <a href="#bespoke" class="mobile-item" onclick="toggleMenu()">
+                <i class="fa-solid fa-wand-magic-sparkles text-brand-magenta"></i>
+                <span class="text-brand-magenta leading-none">Comenzi<br>Personalizate</span>
+            </a>
+
+        </div>
+
+        <!-- BOTTOM: Login & Socials -->
+        <div class="flex flex-col items-center gap-6 mt-2">
+            
+            <!-- Login Button -->
+            <button onclick="handleAccountClick(); toggleMenu()" class="login-trigger-text flex items-center gap-3 px-10 py-3 border border-brand-ice/20 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] text-brand-ice hover:bg-brand-ice/10 transition-all">
+                <i class="fa-regular fa-user"></i>
+                <span>Log In</span>
+            </button>
+
+            <!-- Socials -->
+            <div class="flex items-center gap-8">
+                <a href="https://www.instagram.com/handmade.candles.mary" target="_blank" class="text-2xl text-brand-blue/60 hover:text-brand-magenta hover:scale-110 transition-all">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@handmade.candles.soap" target="_blank" class="text-2xl text-brand-blue/60 hover:text-brand-magenta hover:scale-110 transition-all">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+
+            <p class="text-[8px] uppercase tracking-widest text-brand-dark/50">Handmade by Mary</p>
+        </div>
+
+    </div>
+</div>
+<!-- HEADER: Apropiat de secțiunea următoare -->
+<header id="home" class="relative w-full min-h-[65vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden pt-24 md:pt-40 bg-brand-peach">
+    
+    <div class="relative z-10 w-full h-full flex items-center justify-center px-4 md:px-12 pb-4 md:pb-8">
+        
+        <!-- WRAPPER: No background, sharper rounding, white border -->
+        <div class="relative rounded-[50px] md:rounded-[80px] border-2 md:border-4 border-white shadow-2xl overflow-hidden">
+            
+            <img 
+                src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/3e3eeb7b-f368-45ee-937c-c4f40e7b9208.png?alt=media&token=f80d44bd-1b1a-4447-8602-7aeaceb2fea7" 
+                class="block w-auto h-auto max-w-full max-h-[58vh] md:max-h-[70vh] object-cover" 
+                alt="Hero"
+            />
+
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+<main class="w-full overflow-hidden"> <!-- Added overflow-hidden here as extra safety -->
+
+
+
+<!-- SECTION 1: PHILOSOPHY -->
+<section id="philosophy" class="py-20 md:py-32 bg-[#0D071A] relative overflow-hidden">
+    
+    <!-- Background Glow -->
+    <div class="glow-soft" style="background: var(--magenta); top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.1; width: 800px; height: 800px;"></div>
+
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-24">
+            
+            <!-- 1. THE TITLE (order-1 on mobile) -->
+            <div class="w-full md:w-1/2 order-1 md:order-2 flex flex-col items-center md:items-start text-center md:text-left">
+                <div class="mb-8 md:mb-12">
+                    <span class="text-brand-blue text-[10px] uppercase tracking-[0.5em] mb-4 block font-bold opacity-60">Povestea Noastră</span>
+                    <h2 class="neon-text font-serif text-5xl md:text-7xl lg:text-8xl leading-tight italic">
+                        Handmade <br> <span class="flicker-slow">by</span> Mary
+                    </h2>
+                    <div class="h-[1px] w-24 bg-brand-magenta mt-6 md:ml-0 mx-auto"></div>
+                </div>
+
+                <!-- DESKTOP TEXT -->
+                <div class="hidden md:block space-y-8">
+    <p class="text-brand-ice/90 text-lg font-light leading-relaxed italic">
+        "Nu vindem doar <span class="text-brand-magenta font-bold">flori de săpun</span>. Sculptăm <span class="text-brand-magenta font-bold">emoții parfumate</span> care nu se ofilesc <span class="text-brand-magenta font-bold">niciodată</span>."
+    </p>
+                    <p class="text-brand-blue/50 text-sm md:text-base leading-loose tracking-wide">
+                        Fiecare petală este modelată manual în atelierul nostru, folosind tehnici care îmbină răbdarea artizanală cu designul modern. Rezultatul? Obiecte decorative care par să respire.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="https://www.instagram.com/handmade.candles.mary" target="_blank" class="btn-luxury-blue group px-8 py-4 rounded-full flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.3em]">
+                            <i class="fa-brands fa-instagram text-lg group-hover:rotate-12 transition-transform"></i>
+                            <span>Instagram</span>
+                        </a>
+
+
+    <!-- NEW BUTTON HERE -->
+    <button onclick="openAboutBook()" class="btn-luxury-blue group px-8 py-4 rounded-full flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.3em] border border-brand-magenta/30">
+        <i class="fa-solid fa-book-open text-lg text-brand-magenta"></i>
+        <span>Despre Mine</span>
+    </button>
+                        <a href="https://www.tiktok.com/@handmade.candles.soap" target="_blank" class="btn-luxury-anim group px-8 py-4 rounded-full flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.3em] text-white">
+                            <i class="fa-brands fa-tiktok text-lg group-hover:-rotate-12 transition-transform"></i>
+                            <span>TikTok</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. THE IMAGE CONTAINER (order-2 on mobile) -->
+            <div class="w-full max-w-[350px] md:w-[450px] order-2 md:order-1 flex-shrink-0 relative group">
+                
+                <!-- Main Image Box -->
+<div class="absolute inset-0 opacity-[0.15] pointer-events-none mix-blend-overlay" 
+     style="background-image: url('https://grainy-gradients.vercel.app/noise.svg');">
+</div>                
+                <div class="relative bg-[#1a0f2e] p-1.5 rounded-2xl border border-white/10 overflow-hidden shadow-2xl z-10">
+                    <img 
+                        src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2FCaptur%C4%83%20de%20ecran%202026-02-12%20192716.png?alt=media&token=89a9939e-38a7-4434-8fb6-58979eec3cc5" 
+                        class="w-full h-auto rounded-xl transform group-hover:scale-105 transition-transform duration-[2s]" 
+                        alt="Handmade Mary Artistry"
+                    />
+                </div>
+
+<!-- THE DYNAMIC POLAROID STACK -->
+<div class="absolute -bottom-6 -right-4 md:-bottom-10 md:-right-12 w-36 md:w-56 bg-[#FAF9F6] p-2 md:p-3 shadow-[20px_20px_60px_rgba(0,0,0,0.8)] rotate-[5deg] z-30 transition-all duration-500 hover:rotate-0 hover:scale-110 flex flex-col group/polaroid overflow-hidden cursor-pointer" onclick="nextPolaroid()">
+    
+    <!-- Paper Texture Overlay -->
+    <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');"></div>
+    
+<div class="aspect-square bg-white overflow-hidden relative border border-black/5">
+    <!-- THE GLARE LAYER -->
+    <div class="polaroid-glare"></div>
+    
+    <img id="polaroid-display" 
+         src="https://iili.io/qJePnPn.png" 
+         class="w-full h-full object-contain p-2 zoom-in" 
+         alt="Handmade Detail">
+</div>
+    <!-- Polaroid Bottom Label -->
+    <div class="pt-3 md:pt-5 pb-1 relative z-10">
+        <p id="polaroid-caption" class="font-serif italic text-[10px] md:text-[12px] text-[#2c2c2c] text-center tracking-tighter opacity-60">
+            Handmade Magic
+        </p>
+    </div>
+
+    <!-- Subtle Paper Sheen -->
+    <div class="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent pointer-events-none"></div>
+</div>
+
+                <!-- Floating Tech Badge -->
+                <div class="absolute top-4 left-4 bg-black/70 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full z-20">
+                    <p class="text-brand-ice text-[9px] font-bold uppercase tracking-widest">Atelier Artizanal</p>
+                </div>
+            </div>
+
+<!-- 3. MOBILE TEXT & SOCIALS (order-3 on mobile) -->
+<div class="w-full order-3 md:hidden flex flex-col items-center text-center space-y-8 mt-10 px-4">
+<p class="text-brand-ice/90 text-lg md:text-2xl font-light leading-relaxed italic">
+    "Nu vindem doar <span class="text-brand-magenta font-bold">flori de săpun</span>. Sculptăm <span class="text-brand-magenta font-bold">emoții parfumate</span> care nu se ofilesc <span class="text-brand-magenta font-bold">niciodată</span>."
+</p>
+    
+    <!-- MOBILE SOCIALS -->
+    <div class="flex flex-wrap justify-center gap-4 pt-4">
+        <a href="https://www.instagram.com/handmade.candles.mary" target="_blank" class="btn-luxury-blue group px-6 py-4 rounded-full flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.3em]">
+            <i class="fa-brands fa-instagram text-lg"></i>
+            <span>Instagram</span>
+        </a>
+
+
+    <!-- NEW BUTTON HERE -->
+    <button onclick="openAboutBook()" class="btn-luxury-anim group  px-6 py-4 rounded-full flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.3em] border border-brand-magenta/30">
+        <i class="fa-solid fa-book-open text-lg text-brand-magenta"></i>
+        <span>Despre Mine</span>
+    </button>
+        <a href="https://www.tiktok.com/@handmade.candles.soap" target="_blank" class="btn-luxury-blue group px-6 py-4 rounded-full flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.3em] text-white">
+            <i class="fa-brands fa-tiktok text-lg"></i>
+            <span>TikTok</span>
+        </a>
+    </div>
+</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- DIVIDER: Reviews -> Collection -->
+<div class="section-divider bg-brand-dark">
+    <div class="divider-line"></div>
+    <div class="divider-icon-box"><i class="fa-regular fa-gem"></i></div>
+    <div class="divider-line"></div>
+</div>
+
+<!-- SECTION 1.5: REVIEWS PREVIEW -->
+<section id="reviews-preview" class="py-20 bg-transparent relative overflow-hidden border-t border-white/5">
+    <div class="glow-soft" style="background: var(--purple); bottom: -100px; left: -100px; opacity: 0.1;"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+        <h2 class="float-text text-3xl md:text-5xl font-serif italic mb-4 text-brand-ice" data-reveal="up">
+            Ce spun clienții noștri
+        </h2>
+        <p class="text-brand-blue/50 text-[10px] uppercase tracking-[0.4em] mb-16" data-reveal="up">Experiențe modelate cu dragoste</p>
+
+<!-- Container pentru recenzii (se vor încărca din Firebase) -->
+<div id="homeReviewsContainer" class="no-scrollbar mb-16 px-4">
+    <!-- Placeholder până se încarcă -->
+    <div class="indigo-frame rounded-2xl p-8 opacity-20 italic text-xs min-w-[300px]">Se încarcă recenzii...</div>
+    <div class="indigo-frame rounded-2xl p-8 opacity-20 italic text-xs min-w-[300px]">Se încarcă recenzii...</div>
+    <div class="indigo-frame rounded-2xl p-8 opacity-20 italic text-xs min-w-[300px]">Se încarcă recenzii...</div>
+</div>
+
+<!-- Elimină data-reveal pentru ca butonul să nu aștepte scroll-ul -->
+<div class="mt-4"> 
+<!-- LUXURY REVIEWS BUTTON -->
+<!-- VERTICAL LUXURY REVIEWS BADGE -->
+<div class="flex justify-center mt-12">
+    <a href="Recenzii.html" class="btn-luxury-blue btn-review-badge rounded-sm">
+        
+        <!-- TOP: User Icon -->
+        <i class="fa-solid fa-circle-user badge-user-icon"></i>
+
+        <!-- MIDDLE: Stars Animation -->
+        <div class="badge-stars-wrapper">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+
+        <!-- BOTTOM: Text -->
+        <span class="badge-text relative z-10">Vezi toate recenziile</span>
+        
+    </a>
+</div>
+</div>
+</section>
+
+<!-- DIVIDER: Reviews -> Collection -->
+<div class="section-divider bg-brand-dark">
+    <div class="divider-line"></div>
+    <div class="divider-icon-box"><i class="fa-regular fa-gem"></i></div>
+    <div class="divider-line"></div>
+</div>
+
+<!-- SECTION 2: COLLECTION GRID (SMALLER ON PC) -->
+<section id="collection" class="py-24 md:py-32 bg-transparent relative overflow-hidden">    <!-- Background Glow -->
+    <div class="glow-soft" style="background: var(--purple); top: 10px; right: -100px; opacity: 0.2;"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        
+        <!-- HEADER -->
+        <div class="mb-16 text-center" data-reveal="up">
+    <span class="text-brand-blue text-[10px] uppercase tracking-[0.5em] mb-6 block font-bold">Explorați Arta Noastră</span>
+    <h2 class="float-text text-5xl md:text-7xl font-serif text-brand-ice italic mb-6">Colecțiile Noastre</h2>
+            <p class="text-brand-blue/60 text-[11px] uppercase tracking-[0.3em] font-light max-w-xl mx-auto leading-loose">
+                Fiecare piesă este sculptată manual pentru a capta un moment de eternitate.
+            </p>
+        </div>
+
+        <!-- THE 6 COLLECTIONS GRID -->
+        <!-- CHANGE HERE: Added 'max-w-5xl mx-auto' to shrink the grid width on PC -->
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+
+            <!-- 1. MĂRTURII BOTEZ -->
+            <a href="marturii.html" class="group block h-full reveal-item">
+                <div class="indigo-frame h-full flex flex-col p-6"> <!-- Reduced padding slightly -->
+                    <div class="img-container aspect-[3/4] mb-6 relative overflow-hidden slideshow-marturii">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Feedcf612-d4c8-430a-855f-5981d6daca9a.png?alt=media&token=417d6c91-6806-46d4-a1fb-76642d787e7b" class="slide-img opacity-100 group-hover:scale-110" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Feedcf612-d4c8-430a-855f-5981d6daca9a.png44.png?alt=media&token=c0f7929e-4219-49b4-99bf-3f2436386eb8" class="slide-img opacity-0 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+                    </div>
+                    <div class="text-center mt-auto relative z-20">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Ftexts%2Fbotezuri.png?alt=media&token=6387fec3-ccbd-40a3-90c0-d52a9f59aa7d" class="text-logo-crop h-10 object-contain" alt="Botezuri">
+                        <p class="text-[9px] uppercase tracking-[0.2em] text-brand-blue/50 mt-4">Amintiri pentru cei dragi</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 2. VALENTINES DAY -->
+            <a href="valentines.html" class="group block h-full reveal-item">
+                <div class="indigo-frame h-full flex flex-col p-6">
+                    <div class="img-container aspect-[3/4] mb-6 relative overflow-hidden slideshow-valentines">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2FChatGPT%20Image%2012%20feb.%202026%2C%2017_54_13.png?alt=media&token=9f4db92e-1a21-410d-ae88-0f7ae7df41b8" class="slide-img opacity-100 group-hover:scale-110" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2FChatGPT%20Image%2012%20feb.%202026%2C%2018_03_15.png?alt=media&token=dc921b91-168b-47e4-bf90-8bb8f9e16352" class="slide-img opacity-0 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+                    </div>
+                    <div class="text-center mt-auto relative z-20">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Ftexts%2FValentains%20day.png?alt=media&token=2714856a-e784-4c8f-9100-a01b7cc28d36" class="text-logo-crop h-10 object-contain" alt="Valentine's">
+                        <p class="text-[9px] uppercase tracking-[0.2em] text-brand-blue/50 mt-4">Love Edition</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 3. CADOURI -->
+            <a href="cadouri.html" class="group block h-full reveal-item">
+                <div class="indigo-frame h-full flex flex-col p-6">
+                    <div class="img-container aspect-[3/4] mb-6 relative overflow-hidden slideshow-cadouri">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Fef565368-bda4-4b16-84cd-c779d36f4799.png?alt=media&token=4fc4bec4-d750-47fe-bb38-9ac63dd43028" class="slide-img opacity-100 group-hover:scale-110" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Fb49ecd7c-41ac-4ba7-9c3f-ff1c7d6c50f1.png?alt=media&token=4ef1128f-abf0-4927-91db-60fa4ef92d6a" class="slide-img opacity-0 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+                    </div>
+                    <div class="text-center mt-auto relative z-20">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Ftexts%2Fcadouri.png?alt=media&token=68a7deba-2057-40cc-be16-6063fd0a619d" class="text-logo-crop h-10 object-contain" alt="Cadouri">
+                        <p class="text-[9px] uppercase tracking-[0.2em] text-brand-blue/50 mt-4">Gesturi care contează</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 4. PRIMĂVARĂ -->
+            <a href="primavara.html" class="group block h-full reveal-item">
+                <div class="indigo-frame h-full flex flex-col p-6">
+                    <div class="img-container aspect-[3/4] mb-6 relative overflow-hidden slideshow-primavara">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Fa5c8bff7-a0ab-43a7-9441-f3cd8c16f08c.png?alt=media&token=0a0bfdf5-2cae-4e23-8d11-f2a794790d9a" class="slide-img opacity-100 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+                    </div>
+                    <div class="text-center mt-auto relative z-20">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Ftexts%2Fprimavara.png?alt=media&token=8e9a3aac-7ba4-44e6-a573-6e9bb0b8c364" class="text-logo-crop h-10 object-contain" alt="Primăvară">
+                        <p class="text-[9px] uppercase tracking-[0.2em] text-brand-blue/50 mt-4">Renașterea Naturii</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 5. TOAMNĂ DULCE -->
+            <a href="toamna.html" class="group block h-full reveal-item">
+                <div class="indigo-frame h-full flex flex-col p-6">
+                    <div class="img-container aspect-[3/4] mb-6 relative overflow-hidden slideshow-toamna">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2F53a5fe13-c761-4347-9ea0-eebe804876bb.png?alt=media&token=cc7a387b-0039-4b4d-9143-0e89a272cedb" class="slide-img opacity-100 group-hover:scale-110" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2F4a037ff8-c3a4-4822-9bf8-1a2239c64700.png?alt=media&token=d05d2a2e-54e7-42f5-92bc-e66a93a56c61" class="slide-img opacity-0 group-hover:scale-110" />
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+                    </div>
+                    <div class="text-center mt-auto relative z-20">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Ftexts%2Ftoamna%20dulce.png?alt=media&token=62ec14e7-d1ff-493f-847e-d653f7ce7867" class="text-logo-crop h-10 object-contain" alt="Toamna Dulce">
+                        <p class="text-[9px] uppercase tracking-[0.2em] text-brand-blue/50 mt-4">Arome și culori calde</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 6. ABOUT YOU -->
+            <a href="about-you.html" class="group block h-full reveal-item">
+                <div class="indigo-frame h-full flex flex-col p-6">
+                    <div class="img-container aspect-[3/4] mb-6 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1000&auto=format&fit=crop" class="slide-img opacity-100 group-hover:scale-110" alt="About You" />
+                        <div class="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+                    </div>
+                    <div class="text-center mt-auto relative z-20">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Ftexts%2Fabout%20you.png?alt=media&token=d50d5d61-b8f6-4131-8207-ce45b12691ef" class="text-logo-crop h-10 object-contain" alt="About You">
+                        <p class="text-[9px] uppercase tracking-[0.2em] text-brand-blue/50 mt-4">Creat pentru tine</p>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+
+
+
+    </div>
+</section>
+
+<!-- DIVIDER: Collection -> Bespoke -->
+<div class="section-divider bg-brand-dark" style="padding-bottom: 40px;">
+    <div class="divider-line"></div>
+    <div class="divider-icon-box"><i class="fa-solid fa-feather"></i></div>
+    <div class="divider-line"></div>
+</div>
+
+<!-- SECTION 3: COMANDA PERSONALIZATA -->
+<section id="bespoke" class="bespoke-paper-bg py-24 md:py-32 text-brand-dark relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+        <span class="text-brand-magenta text-[10px] uppercase tracking-[0.6em] mb-8 block font-bold">Personalizare Completă</span>
+        
+        <!-- FLOATING TITLE -->
+        <h2 class="float-text text-4xl md:text-7xl font-serif leading-tight mb-8">
+            Creat special <br/> <span class="text-stroke-dark italic">pentru tine.</span>
+        </h2>
+        
+        <p class="text-brand-dark/70 text-base md:text-lg font-light mb-12 max-w-xl mx-auto leading-relaxed italic">
+            "Fiecare creație este o conversație tăcută. Noi sculptăm în ceară și săpun cuvintele pe care dorești să le transmiți."
+        </p>
+
+        <div class="flex flex-col items-center gap-6">
+            <p class="text-[11px] uppercase tracking-widest text-brand-dark/40 mb-2">Apasă butonul de mai jos pentru detalii și comenzi</p>
+            
+            <!-- ANIMATED WHATSAPP BUTTON -->
+            <a href="https://api.whatsapp.com/send?phone=4917675891440" 
+               target="_blank"
+               class="btn-luxury-anim group px-12 py-6 font-bold uppercase tracking-[0.4em] text-[10px] text-brand-alabaster rounded-sm flex items-center gap-4">
+                <i class="fa-brands fa-whatsapp text-2xl text-[#25D366]"></i>
+                <span class="relative z-10">Comandă pe WhatsApp</span>
+            </a>
+            
+            <div class="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[9px] uppercase tracking-[0.2em] font-bold text-brand-magenta/60">
+                <span>Culori la alegere</span> • <span>Mărturii Evenimente</span> • <span>Cadouri Corporate</span>
+            </div>
+        </div>
+    </div> 
+</section>
+
+
+</main>
+<!-- FOOTER -->
+<!-- FOOTER -->
+<!-- FOOTER -->
+<footer class="bg-[#0D071A] pt-24 pb-12 px-6 md:px-10 border-t border-brand-blue/10 relative overflow-hidden">
+    <!-- Fundal subtil cu reflexii -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-96 bg-brand-purple/5 blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto text-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 items-start">
+            
+            <!-- 1. BRAND COLUMN -->
+            <div class="flex flex-col items-center space-y-8 order-1">
+                <img 
+                    src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/botezuri.png?alt=media&token=952e6adf-9bf6-4ada-ac2f-c9de0cb19b3a" 
+                    alt="MC Logo" 
+                    class="w-32 md:w-40 opacity-90 hover:scale-105 transition-transform duration-500"
+                />
+                <p class="text-brand-blue/50 text-[11px] md:text-xs max-w-xs font-light leading-loose uppercase tracking-[0.2em]">
+                    MC Handmade Mary. <br>
+                    Artă botanică românească. Flori care nu se ofilesc niciodată, sculptate manual.
+                </p>
+                <div class="flex justify-center space-x-5">
+                    <a href="https://www.instagram.com/handmade.candles.mary" target="_blank" class="w-10 h-10 border border-brand-blue/20 rounded-full flex items-center justify-center text-brand-blue hover:bg-brand-magenta hover:border-transparent hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@handmade.candles.soap" target="_blank" class="w-10 h-10 border border-brand-blue/20 rounded-full flex items-center justify-center text-brand-blue hover:bg-brand-magenta hover:border-transparent hover:text-white transition-all duration-300">
+                        <i class="fa-brands fa-tiktok text-lg"></i>
+                    </a>
+
+
+
+        <!-- WhatsApp (Restored) -->
+        <a href="https://api.whatsapp.com/send?phone=4917675891440" target="_blank" class="w-10 h-10 border border-brand-blue/20 rounded-full flex items-center justify-center text-brand-blue hover:bg-brand-magenta hover:border-transparent hover:text-white transition-all duration-300">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+        </a>
+                </div>
+            </div>
+
+            <!-- 2. NAVIGATION COLUMN -->
+            <div class="flex flex-col items-center order-2">
+                <h5 class="text-brand-ice text-[10px] uppercase tracking-[0.4em] mb-8 font-bold">Navigare</h5>
+                <ul class="text-brand-blue/60 text-[10px] space-y-5 font-medium tracking-[0.2em]">
+                    <li><a href="#home" class="hover:text-brand-magenta transition-colors">ACASĂ</a></li>
+                    <li><a href="#philosophy" class="hover:text-brand-magenta transition-colors">BIOGRAFIE</a></li>
+                    <li><a href="Colecții.html" class="hover:text-brand-magenta transition-colors">COLECȚII</a></li>
+                    <li><a href="#bespoke" class="hover:text-brand-magenta transition-colors">COMENZI SPECIALE</a></li>
+                </ul>
+            </div>
+
+            <!-- 3. DEVELOPER COLUMN (Neon & Flicker Effect) -->
+            <div class="flex flex-col items-center order-3">
+                <div class="relative group cursor-pointer">
+                    <div class="absolute inset-[-4px] bg-gradient-to-r from-brand-blue via-brand-magenta to-brand-purple rounded-full opacity-20 group-hover:opacity-100 group-hover:rotate-180 transition-all duration-1000 blur-md"></div>
+                    
+                    <a href="https://www.tiktok.com/@lost_soul_zzz" target="_blank" class="relative block w-24 h-24 rounded-full border-2 border-brand-ice/30 p-1 overflow-hidden transition-all duration-500 group-hover:scale-105 group-hover:border-brand-magenta">
+                        <img 
+                            src="https://iili.io/f1ddIfe.png" 
+                            alt="Lost Soul" 
+                            class="w-full h-full object-cover rounded-full bg-[#0D071A]"
+                        />
+                    </a>
+                </div>
+                
+    <h6 class="text-brand-ice/80 text-[10px] uppercase tracking-[0.4em] font-bold mt-6 mb-1">Website realizat de</h6>
+                
+                <!-- NEON TEXT WITH BUGGY FLICKER -->
+                <p class="font-serif italic text-2xl mb-6 neon-text">
+                    <span class="flicker-slow">L</span>ost <span class="flicker-fast">S</span>oul / 
+                    Nica <span class="flicker-slow">E</span>mmanuel
+                </p>
+                
+                <div class="flex flex-col items-center gap-4 bg-brand-dark/40 p-6 rounded-2xl border border-brand-blue/5">
+                    <span class="text-[9px] uppercase tracking-[0.4em] font-bold text-brand-blue/30">Connect with Dev</span>
+                    
+                    <div class="flex items-center gap-8">
+                        <a href="https://discord.com/users/1063511180376817755" target="_blank" class="text-brand-blue/40 hover:text-[#5865F2] hover:scale-125 transition-all duration-300">
+                            <i class="fa-brands fa-discord text-2xl"></i>
+                        </a>
+                        <a href="https://wa.link/anjgnu" target="_blank" class="text-brand-blue/40 hover:text-[#25D366] hover:scale-125 transition-all duration-300">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@lost_soul_zzz" target="_blank" class="text-brand-blue/40 hover:text-[#FE2C55] hover:scale-125 transition-all duration-300">
+                            <i class="fa-brands fa-tiktok text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20 pt-8 border-t border-brand-blue/5">
+            <p class="text-[9px] uppercase tracking-[0.5em] text-brand-blue/20">
+                &copy; 2026 MC Eternal Petals Artistry • Toate drepturile rezervate.
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- SCRIPTS -->
+
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { getFirestore, collection, doc, setDoc,limit, getDoc, getDocs, query, orderBy, serverTimestamp, updateDoc, addDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+const firebaseConfig = {
+    apiKey: "AIzaSyBiZY4tIZGstiZhw_jiuhvNZ8ZtGCjQb5w",
+    authDomain: "handmade-marry.firebaseapp.com",
+    projectId: "handmade-marry",
+    storageBucket: "handmade-marry.firebasestorage.app",
+    messagingSenderId: "30193148874",
+    appId: "1:30193148874:web:04c1b35f3e54ed43ee2533"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+const provider = new GoogleAuthProvider();
+
+// Salvare în Firestore
+const saveUserToDb = async (user) => {
+    await setDoc(doc(db, "users", user.uid), {
+        uid: user.uid,
+        email: user.email,
+        displayName: user.displayName || "Utilizator",
+        photoURL: user.photoURL || "https://i.pravatar.cc/150",
+        lastLogin: serverTimestamp()
+    }, { merge: true });
+};
+
+window.authFunctions = {
+    loginWithGoogle: () => {
+        signInWithPopup(auth, provider)
+            .then(async (result) => {
+                await saveUserToDb(result.user);
+                toggleAuthModal();
+            }).catch(err => console.log("Login anulat sau eroare"));
+    },
+    logout: () => signOut(auth).then(() => toggleUserModal()),
+    handleEmailAuth: (e) => {
+        e.preventDefault();
+        const email = document.getElementById('auth-email').value, pass = document.getElementById('auth-pass').value;
+        const isReg = document.getElementById('auth-title').innerText.includes('Cont');
+        
+        const action = isReg ? createUserWithEmailAndPassword(auth, email, pass) : signInWithEmailAndPassword(auth, email, pass);
+        action.then(async (res) => {
+            await saveUserToDb(res.user);
+            toggleAuthModal();
+        }).catch(err => alert("Eroare: " + err.message));
+    }
+};
+
+document.getElementById('authForm').addEventListener('submit', window.authFunctions.handleEmailAuth);
+
+onAuthStateChanged(auth, user => {
+    window.currentUser = user; 
+    const btns = document.querySelectorAll('.login-trigger-text');
+
+    if (user) {
+        // --- STARE LOGAT (User Logged In) ---
+        btns.forEach(btn => { 
+            // We select only the span inside the button to keep the icon
+            const span = btn.querySelector('span');
+            if(span) span.innerText = "Contul Meu"; 
+            
+            // Add active styling
+            btn.classList.add('text-brand-ice');
+            btn.classList.add('border-brand-ice/50'); // Mobile border fix
+        });
+        
+        // Update Profile Modal Data
+        const userImg = document.getElementById('user-img');
+        const userEmail = document.getElementById('user-email');
+        const userName = document.getElementById('user-name');
+
+        if (userImg) userImg.src = user.photoURL || "https://i.pravatar.cc/150";
+        if (userEmail) userEmail.innerText = user.email;
+        if (userName) userName.innerText = user.displayName || "Client MC";
+
+    } else {
+        // --- STARE DELOGAT (User Logged Out) ---
+        btns.forEach(btn => { 
+            const span = btn.querySelector('span');
+            if(span) span.innerText = "Log In"; 
+            
+            btn.classList.remove('text-brand-ice');
+            btn.classList.remove('border-brand-ice/50');
+        });
+    }
+});
+
+
+
+async function loadHomeReviews() {
+    const container = document.getElementById('homeReviewsContainer');
+    if(!container) return;
+
+    try {
+        const q = query(collection(db, "reviews"), orderBy("createdAt", "desc"), limit(6));
+        const snap = await getDocs(q);
+        
+        const reviews = [];
+        snap.forEach(d => reviews.push(d.data()));
+
+        if (reviews.length === 0) {
+            container.innerHTML = "<p class='italic opacity-50 text-xs'>Nu există încă recenzii.</p>";
+            return;
+        }
+
+        let currentIndex = 0;
+
+        // Funcția care afișează recenzia curentă cu animație
+        const showReview = (index) => {
+            const data = reviews[index];
+            const isOwner = data.email === 'hancimaria39@gmail.com';
+            
+            // Creăm HTML-ul pentru recenzia curentă
+            const reviewHTML = `
+                <div class="review-item indigo-frame rounded-2xl p-8 text-center shadow-2xl">
+                    <div class="flex flex-col items-center gap-4">
+                        <img src="${data.photo || 'https://i.pravatar.cc/150'}" class="w-16 h-16 rounded-full border-2 border-brand-magenta shadow-lg">
+                        <div>
+                            <p class="text-brand-ice font-bold text-xs uppercase tracking-[0.2em] flex items-center justify-center gap-2">
+                                ${data.name}
+                                ${isOwner ? '<span class="text-[8px] bg-brand-magenta text-white px-2 py-0.5 rounded-full tracking-normal">OWNER</span>' : ''}
+                            </p>
+                            <p class="text-brand-magenta text-sm mt-1">${'★'.repeat(data.rating)}</p>
+                        </div>
+                        <p class="text-brand-softpink/90 text-sm md:text-base leading-relaxed italic max-w-md">
+                            "${data.text}"
+                        </p>
+                    </div>
+                </div>
+            `;
+
+            // Animăm tranziția folosind GSAP (existent în site-ul tău)
+            gsap.to(container, { opacity: 0, y: -10, duration: 0.5, onComplete: () => {
+                container.innerHTML = reviewHTML;
+                gsap.to(container, { opacity: 1, y: 0, duration: 0.5 });
+            }});
+        };
+
+        // Pornim prima recenzie
+        showReview(0);
+
+        // Rotim recenziile la fiecare 5 secunde
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % reviews.length;
+            showReview(currentIndex);
+        }, 5000);
+
+    } catch (e) {
+        console.error("Eroare la încărcarea recenziilor:", e);
+    }
+}
+
+// Nu uita să o apelezi tot aici în modul
+loadHomeReviews();
+
+</script>
+
+
+<script>
+const initSite = () => {
+    const tl = gsap.timeline();
+
+    // Only the main entrance animation (The Loader)
+    tl.to("#loader-logo", { 
+        opacity: 1, 
+        scale: 1.1, 
+        duration: 1.2, 
+        ease: "power2.out" 
+    })
+    .to(".loader", { 
+        yPercent: -100, 
+        duration: 1, 
+        ease: "expo.inOut", 
+        delay: 0.5 
+    });
+
+    // We removed all ScrollTrigger logic here to stop the lag
+};
+
+    let isLoaded = false;
+    window.onload = () => {
+        if(!isLoaded) { isLoaded = true; initSite(); }
+    };
+    setTimeout(() => {
+        if(!isLoaded) { 
+            console.log("Forcing load due to network delay"); 
+            isLoaded = true; 
+            initSite(); 
+        }
+    }, 3500);
+
+function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        const nav = document.getElementById('main-nav');
+        const body = document.body;
+        
+        menu.classList.toggle('active');
+        
+        if (menu.classList.contains('active')) {
+            // Hide the main navigation bar completely
+            nav.style.opacity = '0';
+            nav.style.pointerEvents = 'none'; // Prevent clicks while hidden
+            body.style.overflow = 'hidden';   // Lock scroll
+        } else {
+            // Show the main navigation bar again
+            nav.style.opacity = '1';
+            nav.style.pointerEvents = 'auto';
+            body.style.overflow = 'auto';     // Unlock scroll
+        }
+    }
+
+// FUNCȚII UI GLOBALE
+window.toggleAuthModal = function() {
+    const modal = document.getElementById('authModal');
+    modal.classList.toggle('hidden');
+    if(!modal.classList.contains('hidden')) {
+        gsap.from("#authModal > div:last-child", { opacity: 0, scale: 0.9, duration: 0.4, ease: "back.out(1.7)" });
+    }
+};
+
+window.toggleUserModal = function() {
+    const modal = document.getElementById('userModal');
+    modal.classList.toggle('hidden');
+    if(!modal.classList.contains('hidden')) {
+        gsap.from("#userModal > div:last-child", { opacity: 0, y: 20, duration: 0.4, ease: "power2.out" });
+    }
+};
+
+window.toggleAuthMode = function() {
+    const title = document.getElementById('auth-title');
+    const btn = document.getElementById('auth-toggle-btn');
+    const isLogin = title.innerText === 'Autentificare';
+    title.innerText = isLogin ? 'Cont Nou' : 'Autentificare';
+    btn.innerText = isLogin ? 'Am deja cont' : 'Creează Cont';
+};
+
+window.handleAccountClick = function() {
+    if (window.currentUser) {
+        window.toggleUserModal();
+    } else {
+        window.toggleAuthModal();
+    }
+};
+
+ // --- SLIDESHOW LOGIC FOR COLLECTIONS ---
+    function startSlideshow(selector, intervalTime) {
+        const container = document.querySelector(selector);
+        if (!container) return; 
+
+        const slides = container.querySelectorAll('.slide-img');
+        let currentSlide = 0;
+
+        if (slides.length > 1) {
+            setInterval(() => {
+                slides[currentSlide].classList.remove('opacity-100');
+                slides[currentSlide].classList.add('opacity-0');
+                
+                currentSlide = (currentSlide + 1) % slides.length;
+                
+                slides[currentSlide].classList.remove('opacity-0');
+                slides[currentSlide].classList.add('opacity-100');
+            }, intervalTime);
+        }
+    }
+
+    // Initialize Animations & Slideshows
+    document.addEventListener("DOMContentLoaded", () => {
+        // 1. Start Slideshows
+        startSlideshow('.slideshow-marturii', 3000);
+        startSlideshow('.slideshow-valentines', 3200); // Slightly offset times
+        startSlideshow('.slideshow-cadouri', 3500);
+        startSlideshow('.slideshow-toamna', 3700);
+        startSlideshow('.slideshow-primavara', 3100);
+
+        // 2. Register GSAP Animations for the new Grid Items
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils.toArray('.reveal-item').forEach((item, i) => {
+            gsap.from(item, {
+                y: 50, 
+                opacity: 0, 
+                duration: 1, 
+                delay: i * 0.1, // Stagger effect
+                ease: "power2.out",
+                scrollTrigger: { 
+                    trigger: item, 
+                    start: "top 90%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        });
+    });
+
+
+function createRealPetalFall() {
+    const container = document.getElementById('petal-container');
+    const petalCount = 18; // Balanced number for high-end feel
+    
+    // Your 10 Petal Images
+    const petalImages = [
+        "https://iili.io/qJRyA5x.png",
+        "https://iili.io/qJRyuJj.png",
+        "https://iili.io/qJRyz0u.png",
+        "https://iili.io/qJRyIUb.png",
+        "https://iili.io/qJRyROQ.png",
+        "https://iili.io/qJRy5bV.png",
+        "https://iili.io/qJRyYzB.png",
+        "https://iili.io/qJRyaWP.png",
+        "https://iili.io/qJRy0qF.png",
+        "https://iili.io/qJRy10g.png"
+    ];
+
+    function spawnPetal() {
+        const petal = document.createElement('div');
+        petal.className = 'petal';
+        
+        // Randomize image and size
+        const randomImg = petalImages[Math.floor(Math.random() * petalImages.length)];
+        const size = Math.random() * 30 + 20; // Size between 20px and 50px
+        
+        petal.style.width = `${size}px`;
+        petal.style.height = `${size}px`;
+        petal.style.backgroundImage = `url('${randomImg}')`;
+
+        // Apply a random slight blur to some petals for "depth of field"
+        if (Math.random() > 0.6) {
+            petal.style.filter = `blur(${Math.random() * 2}px)`;
+        }
+
+        container.appendChild(petal);
+
+        const startX = Math.random() * window.innerWidth;
+        const fallDuration = Math.random() * 12 + 10; // Slow, elegant fall
+        const drift = (Math.random() - 0.5) * 400;
+
+        // Set initial 3D Position
+        gsap.set(petal, { 
+            x: startX, 
+            y: -100, 
+            z: Math.random() * 200,
+            rotationX: Math.random() * 360,
+            rotationY: Math.random() * 360,
+            rotationZ: Math.random() * 360,
+            opacity: 0 
+        });
+
+        // 1. The Fall Animation
+        gsap.to(petal, {
+            opacity: 1,
+            y: window.innerHeight + 100,
+            x: startX + drift,
+            duration: fallDuration,
+            ease: "none",
+            onComplete: () => {
+                petal.remove();
+                spawnPetal(); // Loop
+            }
+        });
+
+        // 2. The 3D Flutter (This makes the images look real)
+        gsap.to(petal, {
+            rotationX: "+=720",
+            rotationY: "+=360",
+            duration: fallDuration * 0.4,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+        });
+
+        // 3. The Side Sway
+        gsap.to(petal, {
+            x: "+=80",
+            duration: Math.random() * 3 + 2,
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut"
+        });
+    }
+
+    // Initialize with stagger
+    for (let i = 0; i < petalCount; i++) {
+        setTimeout(spawnPetal, i * 800);
+    }
+}
+
+// Start when everything is loaded
+window.addEventListener('load', createRealPetalFall);
+ 
+</script>
+
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+<script>
+    const lenis = new Lenis();
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+
+
+function initFloatingText() {
+    gsap.utils.toArray('.float-text').forEach((el, i) => {
+        gsap.to(el, {
+            // REDUCED: Only 6-8px movement (barely a whisper)
+            y: -8, 
+            
+            // REDUCED: Tiny rotation so it doesn't look "drunk"
+            rotation: i % 2 === 0 ? 0.3 : -0.3, 
+            
+            // SLOWED DOWN: 5 to 7 seconds per loop (elegant and calm)
+            duration: 5 + Math.random() * 2, 
+            
+            repeat: -1,
+            yoyo: true,
+            ease: "sine.inOut",
+            delay: i * 0.3 // Staggered start so they don't move in sync
+        });
+    });
+}
+
+// Call it inside your existing load event
+window.addEventListener('load', () => {
+    initFloatingText();
+});
+
+// FULL IMAGE CACHE - Preloads every image in the background
+const allAssets = [
+    // --- The 10 Falling Petals ---
+    "https://iili.io/qJRyA5x.png", "https://iili.io/qJRyuJj.png", "https://iili.io/qJRyz0u.png",
+    "https://iili.io/qJRyIUb.png", "https://iili.io/qJRyROQ.png", "https://iili.io/qJRy5bV.png",
+    "https://iili.io/qJRyYzB.png", "https://iili.io/qJRyaWP.png", "https://iili.io/qJRy0qF.png",
+    "https://iili.io/qJRy10g.png",
+
+    // --- Collection Slide 1 ---
+    "https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Feedcf612-d4c8-430a-855f-5981d6daca9a.png?alt=media&token=417d6c91-6806-46d4-a1fb-76642d787e7b",
+    "https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2FChatGPT%20Image%2012%20feb.%202026%2C%2017_54_13.png?alt=media&token=9f4db92e-1a21-410d-ae88-0f7ae7df41b8",
+    "https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Fef565368-bda4-4b16-84cd-c779d36f4799.png?alt=media&token=4fc4bec4-d750-47fe-bb38-9ac63dd43028",
+    "https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Fa5c8bff7-a0ab-43a7-9441-f3cd8c16f08c.png?alt=media&token=0a0bfdf5-2cae-4e23-8d11-f2a794790d9a",
+    "https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2F53a5fe13-c761-4347-9ea0-eebe804876bb.png?alt=media&token=cc7a387b-0039-4b4d-9143-0e89a272cedb",
+
+    // --- Collection Slide 2 ---
+    "https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Feedcf612-d4c8-430a-855f-5981d6daca9a.png44.png?alt=media&token=c0f7929e-4219-49b4-99bf-3f2436386eb8",
+    "https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2FChatGPT%20Image%2012%20feb.%202026%2C%2018_03_15.png?alt=media&token=dc921b91-168b-47e4-bf90-8bb8f9e16352",
+    "https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Fb49ecd7c-41ac-4ba7-9c3f-ff1c7d6c50f1.png?alt=media&token=4ef1128f-abf0-4927-91db-60fa4ef92d6a",
+    "https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2F4a037ff8-c3a4-4822-9bf8-1a2239c64700.png?alt=media&token=d05d2a2e-54e7-42f5-92bc-e66a93a56c61"
+];
+
+
+
+const polaroidImages = [
+    "https://iili.io/qJePnPn.png", "https://iili.io/qJePCMX.png", "https://iili.io/qJePzcG.png",
+    "https://iili.io/qJePxFs.png", "https://iili.io/qJePu94.png", "https://iili.io/qJePAAl.png",
+    "https://iili.io/qJePRN2.png", "https://iili.io/qJeP5tS.png", "https://iili.io/qJePcPe.png",
+    "https://iili.io/qJeP0Ku.png", "https://iili.io/qJeP1cb.png", "https://iili.io/qJePESj.png",
+    "https://iili.io/qJePVAQ.png", "https://iili.io/qJePWNV.png", "https://iili.io/qJePXDB.png",
+    "https://iili.io/qJePjoP.png", "https://iili.io/qJePwV1.png", "https://iili.io/qJePNiF.png",
+    "https://iili.io/qJePeKg.png", "https://iili.io/qJePvUJ.png", "https://iili.io/qJePSHv.png",
+    "https://iili.io/qJePURR.png", "https://iili.io/qJePgNp.png", "https://iili.io/qJePrDN.png"
+];
+
+let polaroidIndex = 0;
+let isSlideshowPaused = false;
+
+// 1. ROTATION LOGIC
+const rotatePolaroid = () => {
+    if (isSlideshowPaused) return; 
+    const img = document.getElementById('polaroid-display');
+    if(!img) return;
+
+    img.style.opacity = '0';
+    img.classList.remove('zoom-in');
+
+    setTimeout(() => {
+        polaroidIndex = (polaroidIndex + 1) % polaroidImages.length;
+        img.src = polaroidImages[polaroidIndex];
+        img.onload = () => {
+            img.style.opacity = '1';
+            img.classList.add('zoom-in');
+        };
+    }, 800); 
+};
+
+// 2. MODAL LOGIC (The Preview Box)
+const handlePolaroidClick = () => {
+    const currentImg = polaroidImages[polaroidIndex];
+    const modal = document.getElementById('productModal');
+    const modalContent = document.getElementById('modalContent');
+    const modalImg = document.getElementById('modalProductImg');
+    const whatsappBtn = document.getElementById('modalWhatsAppBtn');
+
+    if(!modal) return;
+
+    isSlideshowPaused = true; 
+    modalImg.src = currentImg;
+    whatsappBtn.href = `https://api.whatsapp.com/send?phone=4917675891440&text=Bună! Sunt interesat de acest model: ${currentImg}`;
+
+    modal.classList.remove('hidden');
+    setTimeout(() => {
+        modalContent.classList.remove('scale-95', 'opacity-0');
+        modalContent.classList.add('scale-100', 'opacity-100');
+    }, 10);
+};
+
+const closeProductModal = () => {
+    const modal = document.getElementById('productModal');
+    const modalContent = document.getElementById('modalContent');
+    modalContent.classList.remove('scale-100', 'opacity-100');
+    modalContent.classList.add('scale-95', 'opacity-0');
+    setTimeout(() => {
+        modal.classList.add('hidden');
+        isSlideshowPaused = false; 
+    }, 500);
+};
+
+// --- CRITICAL: EXPOSE TO WINDOW ---
+// This prevents the "not defined" error
+window.nextPolaroid = handlePolaroidClick; 
+window.closeProductModal = closeProductModal;
+
+// Start rotation
+setInterval(rotatePolaroid, 4000);
+
+// --- AUDIO SETUP ---
+const storyAudio = new Audio("https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/ElevenLabs_2026-02-15T14_36_33_Alice%20-%20Soothing%2C%20Calm%20and%20Youthful_pvc_sp100_s50_sb75_se0_b_m2.mp3?alt=media&token=ca0a2915-3a32-45c3-a1dd-2a63b1cc02dc");
+storyAudio.volume = 1.0; // Full volume
+
+// Timers
+let audioStartTimer = null;
+let page1FlipTimer = null;
+let page2FlipTimer = null;
+
+window.openAboutBook = () => {
+    const modal = document.getElementById('aboutModal');
+    const book = document.getElementById('theBook');
+    
+    modal.classList.remove('hidden');
+    
+    // 1. OPEN COVER
+    setTimeout(() => {
+        book.classList.add('open');
+    }, 100);
+
+    // 2. START AUDIO (Approx 2.1s later)
+    audioStartTimer = setTimeout(() => {
+        storyAudio.play().catch(e => console.log("Audio block:", e));
+        
+        // 3. FLIP PAGE 1 at 40 SECONDS
+        page1FlipTimer = setTimeout(() => {
+            book.classList.add('flip-1');
+        }, 40000); 
+
+        // 4. FLIP PAGE 2 at 1 MINUTE 46 SECONDS (106000 ms)
+        page2FlipTimer = setTimeout(() => {
+            book.classList.add('flip-2');
+        }, 106000);
+
+    }, 2100); 
+};
+
+window.closeAboutBook = () => {
+    const modal = document.getElementById('aboutModal');
+    const book = document.getElementById('theBook');
+    
+    // STOP EVERYTHING
+    storyAudio.pause();
+    storyAudio.currentTime = 0;
+    
+    clearTimeout(audioStartTimer);
+    clearTimeout(page1FlipTimer);
+    clearTimeout(page2FlipTimer);
+    
+    // RESET ANIMATION SEQUENCE
+    // 1. Unflip pages instantly or quickly
+    book.classList.remove('flip-1');
+    book.classList.remove('flip-2');
+    
+    // 2. Wait a moment for pages to reset, then close cover
+    setTimeout(() => {
+        book.classList.remove('open'); 
+    }, 300); // Small delay ensures pages are flat before cover closes
+
+    // 3. Hide Modal after cover closes
+    setTimeout(() => {
+        modal.classList.add('hidden');
+    }, 1500); 
+};
+</script>
+</body>
+</html>
