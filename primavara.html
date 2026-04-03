@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -177,7 +178,7 @@ html, body {
 <nav class="fixed w-full z-50 px-6 md:px-10 py-6 transition-all duration-500 flex items-center justify-between" id="main-nav">
     <div class="w-32 md:w-44 flex-shrink-0">
         <a href="index.html">
-            <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/botezuri.png?alt=media&token=952e6adf-9bf6-4ada-ac2f-c9de0cb19b3a" class="h-12 w-auto object-contain hover:opacity-80 transition-opacity" alt="Logo" />
+            <img src="https://i.ibb.co/7N4dH4zQ/botezuri.png" class="h-12 w-auto object-contain hover:opacity-80 transition-opacity" alt="Logo" />
         </a>
     </div>
     
@@ -185,7 +186,7 @@ html, body {
         <a href="index.html" class="nav-link-desktop">Acasă</a>
         <a href="index.html#philosophy" class="nav-link-desktop">Biografie</a>
         <a href="collections.html" class="nav-link-desktop text-brand-ice">Colecții</a>
-        <a href="index.html#tombola" class="nav-link-desktop text-brand-blue">Tombolă</a>
+        <a href="tombola.html" class="nav-link-desktop text-brand-blue">Tombolă</a>
         <a href="index.html#bespoke" class="nav-link-desktop text-brand-magenta">Personalizare</a>
     </div>
 
@@ -212,7 +213,7 @@ html, body {
         <div class="flex flex-col gap-5 items-center justify-center flex-grow">
             <a href="index.html" class="mobile-item" onclick="toggleMenu()"><i class="fa-solid fa-house-chimney"></i><span>Acasă</span></a>
             <a href="collections.html" class="mobile-item" onclick="toggleMenu()"><i class="fa-solid fa-gem"></i><span>Colecții</span></a>
-            <a href="index.html#tombola" class="mobile-item" onclick="toggleMenu()"><i class="fa-solid fa-ticket text-brand-blue"></i><span class="text-brand-blue">Tombolă</span></a>
+            <a href="tombola.html" class="mobile-item" onclick="toggleMenu()"><i class="fa-solid fa-ticket text-brand-blue"></i><span class="text-brand-blue">Tombolă</span></a>
         </div>
         <div class="flex flex-col items-center gap-6 mt-2">
             <button onclick="handleAccountClick(); toggleMenu()" class="login-trigger-text flex items-center gap-3 px-10 py-3 border border-brand-ice/20 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] text-brand-ice hover:bg-brand-ice/10 transition-all">
@@ -227,14 +228,12 @@ html, body {
     <!-- Background Glow -->
     <div class="glow-soft" style="background: var(--magenta); top: 100px; left: 50%; transform: translateX(-50%); opacity: 0.1;"></div>
 
-<!-- Header Reparat -->
-    <div class="text-center mb-16 relative z-10" data-reveal="up">
-        <img src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/HM%20MC%2Ftexts%2Fprimavara.png?alt=media&token=8e9a3aac-7ba4-44e6-a573-6e9bb0b8c364" 
-             class="text-logo-crop h-20 mx-auto mb-6" 
-             alt="Primăvara">
-        <div class="h-[1px] w-24 bg-gradient-to-r from-transparent via-brand-magenta to-transparent mx-auto"></div>
-    </div>
-    </div>
+<!-- Header -->
+<div class="text-center mb-16 relative z-10" data-reveal="up">
+    <img src="https://i.ibb.co/fw3brkd/primavara.png" 
+         class="text-logo-crop h-20 mx-auto mb-6" alt="Primăvara">
+    <div class="h-[1px] w-24 bg-gradient-to-r from-transparent via-brand-magenta to-transparent mx-auto"></div>
+</div>
 
     <!-- ADMIN UPLOAD PANEL (Only shows for you) -->
     <div id="adminPanel" class="hidden admin-panel p-8 rounded-sm mb-16 text-center relative z-20">
@@ -263,56 +262,107 @@ html, body {
         <div id="status" class="mt-4 text-[10px] text-brand-blue uppercase tracking-widest"></div>
     </div>
 
-    <!-- PRODUCTS GRID -->
-    <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
-        <!-- Products load here -->
+<!-- PRODUCTS GRID -->
+<div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
+    
+    <!-- Product 1: THE GALLERY (7 Related Images) -->
+    <div class="product-card p-4 group cursor-pointer" onclick="openGallery(0)">
+        <div class="aspect-[4/5] w-full overflow-hidden mb-6 relative rounded-lg bg-[#1a0f2e]">
+            <img src="https://i.ibb.co/5hfGTvdD/Whats-App-Image-2026-02-12-at-15-40-19-6.jpg" class="w-full h-full object-cover object-center img-zoom block">
+            <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                <span class="text-white text-[10px] uppercase tracking-[0.3em] border border-white/40 px-4 py-2">Vezi Galeria (7 poze)</span>
+            </div>
+        </div>
+        <div class="text-center">
+            <h3 class="font-serif italic text-2xl text-brand-ice">Spring Awakening Set</h3>
+            <p class="text-brand-magenta mt-2 uppercase tracking-widest text-[10px] font-bold">Set Complet • Preț la cerere</p>
+        </div>
     </div>
+
+    <!-- Product 2 -->
+    <div class="product-card p-4 group cursor-pointer" onclick="openManualLightbox('https://i.ibb.co/MDC3yxht/80e083de-715a-459d-9e85-efe9525f1081.png', 'Pastel Harmony')">
+        <div class="aspect-[4/5] w-full overflow-hidden mb-6 relative rounded-lg bg-[#1a0f2e]">
+            <img src="https://i.ibb.co/MDC3yxht/80e083de-715a-459d-9e85-efe9525f1081.png" class="w-full h-full object-cover object-center img-zoom block">
+        </div>
+        <div class="text-center">
+            <h3 class="font-serif italic text-2xl text-brand-ice">Pastel Harmony</h3>
+            <p class="text-brand-magenta mt-2 uppercase tracking-widest text-[10px] font-bold">Preț la cerere</p>
+        </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card p-4 group cursor-pointer" onclick="openManualLightbox('https://i.ibb.co/rGB5z6z0/242c192a-0cd0-40a3-b98d-e80d1dec48b8.png', 'Rose Garden Bloom')">
+        <div class="aspect-[4/5] w-full overflow-hidden mb-6 relative rounded-lg bg-[#1a0f2e]">
+            <img src="https://i.ibb.co/rGB5z6z0/242c192a-0cd0-40a3-b98d-e80d1dec48b8.png" class="w-full h-full object-cover object-center img-zoom block">
+        </div>
+        <div class="text-center">
+            <h3 class="font-serif italic text-2xl text-brand-ice">Rose Garden Bloom</h3>
+            <p class="text-brand-magenta mt-2 uppercase tracking-widest text-[10px] font-bold">Preț la cerere</p>
+        </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card p-4 group cursor-pointer" onclick="openManualLightbox('https://i.ibb.co/FTx9y40/Chat-GPT-Image-12-feb-2026-18-06-51.png', 'Lavanda Mist')">
+        <div class="aspect-[4/5] w-full overflow-hidden mb-6 relative rounded-lg bg-[#1a0f2e]">
+            <img src="https://i.ibb.co/FTx9y40/Chat-GPT-Image-12-feb-2026-18-06-51.png" class="w-full h-full object-cover object-center img-zoom block">
+        </div>
+        <div class="text-center">
+            <h3 class="font-serif italic text-2xl text-brand-ice">Lavanda Mist</h3>
+            <p class="text-brand-magenta mt-2 uppercase tracking-widest text-[10px] font-bold">Preț la cerere</p>
+        </div>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-card p-4 group cursor-pointer" onclick="openManualLightbox('https://i.ibb.co/bRdVyrRY/d0c29bb1-f612-444b-9bd4-8ee45c65e33d.png', 'Pure Blossom')">
+        <div class="aspect-[4/5] w-full overflow-hidden mb-6 relative rounded-lg bg-[#1a0f2e]">
+            <img src="https://i.ibb.co/bRdVyrRY/d0c29bb1-f612-444b-9bd4-8ee45c65e33d.png" class="w-full h-full object-cover object-center img-zoom block">
+        </div>
+        <div class="text-center">
+            <h3 class="font-serif italic text-2xl text-brand-ice">Pure Blossom</h3>
+            <p class="text-brand-magenta mt-2 uppercase tracking-widest text-[10px] font-bold">Preț la cerere</p>
+        </div>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-card p-4 group cursor-pointer" onclick="openManualLightbox('https://i.ibb.co/mVvVY7qX/fade7e50-e168-41a3-98cd-0c5d78390e3e.png', 'Spring Dream')">
+        <div class="aspect-[4/5] w-full overflow-hidden mb-6 relative rounded-lg bg-[#1a0f2e]">
+            <img src="https://i.ibb.co/mVvVY7qX/fade7e50-e168-41a3-98cd-0c5d78390e3e.png" class="w-full h-full object-cover object-center img-zoom block">
+        </div>
+        <div class="text-center">
+            <h3 class="font-serif italic text-2xl text-brand-ice">Spring Dream</h3>
+            <p class="text-brand-magenta mt-2 uppercase tracking-widest text-[10px] font-bold">Preț la cerere</p>
+        </div>
+    </div>
+
+</div>
 </main>
 
-<!-- PRODUCT LIGHTBOX COMPLET ACTUALIZAT -->
+<!-- PRODUCT LIGHTBOX WITH ARROWS -->
 <div id="productLightbox" class="fixed inset-0 z-[200] hidden flex items-center justify-center px-4 py-6">
-    <!-- Fundal întunecat cu Blur -->
     <div class="absolute inset-0 bg-brand-dark/98 backdrop-blur-xl" onclick="closeLightbox()"></div>
     
-    <!-- Cardul Modal: Compact, Scrollabil, Grilă 1 col (mobil) / 2 col (desktop) -->
-    <div class="relative bg-[#1a0f2e] border border-brand-blue/20 max-w-5xl w-full max-h-[92vh] overflow-y-auto grid grid-cols-1 md:grid-cols-2 rounded-sm shadow-2xl custom-lightbox-scroll">
+    <div class="relative bg-[#1a0f2e] border border-brand-blue/20 max-w-5xl w-full max-h-[92vh] overflow-y-auto grid grid-cols-1 md:grid-cols-2 rounded-sm shadow-2xl">
         
-        <!-- SECȚIUNE IMAGINE: Umple lățimea pe mobil -->
-        <div class="relative w-full h-72 md:h-auto bg-black">
-            <!-- Buton Închidere (X) - Mutat aici pentru contrast mai bun -->
-            <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white z-50 bg-black/60 w-10 h-10 rounded-full flex items-center justify-center backdrop-blur-md border border-white/10 hover:bg-brand-magenta transition-colors">
+        <!-- IMAGE SECTION -->
+        <div class="relative w-full h-80 md:h-auto bg-black flex items-center justify-center overflow-hidden">
+            <!-- ARROWS (Only visible for gallery) -->
+            <button id="prevBtn" onclick="changeImage(-1)" class="absolute left-4 z-[70] bg-black/50 w-10 h-10 rounded-full text-white hover:bg-brand-magenta transition-all"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="nextBtn" onclick="changeImage(1)" class="absolute right-4 z-[70] bg-black/50 w-10 h-10 rounded-full text-white hover:bg-brand-magenta transition-all"><i class="fa-solid fa-chevron-right"></i></button>
+            
+            <img id="lbImg" src="" class="w-full h-full object-contain block" alt="Produs">
+            
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white z-50 bg-black/60 w-10 h-10 rounded-full flex items-center justify-center border border-white/10 hover:bg-brand-magenta">
                 <i class="fa-solid fa-xmark text-xl"></i>
             </button>
-            
-            <img id="lbImg" src="" class="w-full h-full object-cover block" alt="Produs">
         </div>
 
-        <!-- SECȚIUNE DETALII: Padding echilibrat -->
-        <div class="p-6 md:p-12 flex flex-col justify-start md:justify-center bg-[#1a0f2e]">
-            <h2 id="lbTitle" class="text-3xl md:text-5xl font-serif italic text-brand-ice mb-3 md:mb-5 italic leading-tight">Nume</h2>
-            <p id="lbPrice" class="text-2xl md:text-3xl text-brand-magenta font-light mb-8 md:mb-10 italic">-- RON</p>
-            
-            <!-- Descriere stilizată -->
-            <div class="space-y-4 mb-10 text-sm md:text-base text-brand-softpink/70 font-light leading-relaxed">
-                <p class="flex items-start gap-3">
-                    <span class="text-brand-magenta">•</span> 
-                    <span>Sculptat manual din ceară de soia 100% naturală.</span>
-                </p>
-                <p class="flex items-start gap-3">
-                    <span class="text-brand-magenta">•</span> 
-                    <span>Detalii botanice ultra-realiste realizate manual.</span>
-                </p>
-                <p class="flex items-start gap-3">
-                    <span class="text-brand-magenta">•</span> 
-                    <span>Un cadou deosebit care păstrează amintirea vie.</span>
-                </p>
-            </div>
-
-            <!-- Buton WhatsApp Personalizat -->
-            <a id="waBtn" href="https://api.whatsapp.com/send?phone=4917675891440" target="_blank" class="btn-wa py-4 md:py-5 px-8 text-[11px] font-bold uppercase tracking-[0.2em] rounded-full flex items-center justify-center gap-3 transition-all">
+        <!-- DETAILS SECTION -->
+        <div class="p-8 md:p-12 flex flex-col justify-center bg-[#1a0f2e]">
+            <h2 id="lbTitle" class="text-3xl md:text-5xl font-serif italic text-brand-ice mb-5 leading-tight">Nume</h2>
+            <p id="lbPrice" class="text-2xl text-brand-magenta font-light mb-8 italic">Preț la cerere</p>
+            <a id="waBtn" href="#" target="_blank" class="btn-wa py-4 px-8 text-[11px] font-bold uppercase tracking-[0.2em] rounded-full flex items-center justify-center gap-3">
                 <i class="fa-brands fa-whatsapp text-xl"></i> Comandă pe WhatsApp
             </a>
-            
             <p class="text-[9px] text-center text-brand-ice/30 mt-6 uppercase tracking-widest">Transport rapid în toată România</p>
         </div>
     </div>
@@ -374,7 +424,7 @@ html, body {
 <!-- 1. BRAND COLUMN - Centered -->
             <div class="flex flex-col items-center space-y-8 order-1">
                 <img 
-                    src="https://firebasestorage.googleapis.com/v0/b/ksda-7546f.firebasestorage.app/o/botezuri.png?alt=media&token=952e6adf-9bf6-4ada-ac2f-c9de0cb19b3a" 
+                    src="https://i.ibb.co/7N4dH4zQ/botezuri.png" 
                     alt="MC Logo" 
                     class="w-32 md:w-40 opacity-90 hover:scale-105 transition-transform duration-500"
                 />
@@ -456,168 +506,85 @@ html, body {
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
     import { getAuth, onAuthStateChanged, GoogleAuthProvider, signInWithPopup, signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
-    import { getFirestore, doc, collection, addDoc, onSnapshot, query, orderBy, deleteDoc, getDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
-    import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js";
 
-    const hmConfig = {
+    const firebaseConfig = {
         apiKey: "AIzaSyBiZY4tIZGstiZhw_jiuhvNZ8ZtGCjQb5w",
         authDomain: "handmade-marry.firebaseapp.com",
         projectId: "handmade-marry"
     };
 
-    const ksdaConfig = {
-        apiKey: "AIzaSyDoH80kffNrzFAcyRqsTVdifs-whUhwH9A",
-        projectId: "ksda-7546f",
-        storageBucket: "ksda-7546f.firebasestorage.app"
-    };
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
 
-    const appHM = initializeApp(hmConfig);
-    const appKSDA = initializeApp(ksdaConfig, "ksdaStorageApp");
+    // --- GALLERY DATA ---
+    const springGallery = [
+        "https://i.ibb.co/5hfGTvdD/Whats-App-Image-2026-02-12-at-15-40-19-6.jpg",
+        "https://i.ibb.co/b5TgnTfF/Whats-App-Image-2026-02-12-at-15-40-19-8.jpg",
+        "https://i.ibb.co/qLXtsQgr/Whats-App-Image-2026-02-12-at-15-40-19.jpg",
+        "https://i.ibb.co/bgXmHcPt/Whats-App-Image-2026-02-12-at-15-40-20-4.jpg",
+        "https://i.ibb.co/gLfYgYjH/Whats-App-Image-2026-02-12-at-15-40-20-6.jpg",
+        "https://i.ibb.co/npsH0Hm/Whats-App-Image-2026-02-12-at-15-40-20.jpg",
+        "https://i.ibb.co/QvWpFr3R/Whats-App-Image-2026-02-12-at-15-40-21.jpg"
+    ];
+    let galleryIdx = 0;
 
-    const auth = getAuth(appHM);
-    const db = getFirestore(appHM);
-    const storage = getStorage(appKSDA);
-
-    const COLLECTION_ID = "primavara"; 
-    const ADMIN_EMAILS = ["nicaemmanuel433qe@gmail.com", "hancimaria39@gmail.com"];
-
-    // --- LOGICA AUTH ---
+    // --- GLOBAL FUNCTIONS ---
     window.authFunctions = {
         loginWithGoogle: async () => {
             const provider = new GoogleAuthProvider();
-            try {
-                await signInWithPopup(auth, provider);
-                document.getElementById('authModal').classList.add('hidden');
-            } catch (error) { alert("Eroare la logare!"); }
+            try { await signInWithPopup(auth, provider); document.getElementById('authModal').classList.add('hidden'); } catch (error) { alert("Eroare la logare!"); }
         },
-        logout: async () => {
-            await signOut(auth);
-            location.reload();
-        }
+        logout: async () => { await signOut(auth); location.reload(); }
     };
 
-onAuthStateChanged(auth, (user) => {
-        window.currentUser = user; 
+    onAuthStateChanged(auth, (user) => {
         const loginTexts = document.querySelectorAll('.login-trigger-text span');
-
         if (user) {
-            loginTexts.forEach(el => el.innerText = "Contul meu");
-            document.getElementById('user-img').src = user.photoURL || "";
-            document.getElementById('user-name').innerText = user.displayName;
-            document.getElementById('user-email').innerText = user.email;
-
-            if (ADMIN_EMAILS.includes(user.email.toLowerCase())) {
-                document.getElementById('adminPanel').classList.remove('hidden');
-            }
+            loginTexts.forEach(el => el.innerText = "CONTUL MEU");
+            if(document.getElementById('user-img')) document.getElementById('user-img').src = user.photoURL || "https://i.pravatar.cc/150";
         } else {
-            loginTexts.forEach(el => el.innerText = "Log In");
-            document.getElementById('adminPanel').classList.add('hidden');
+            loginTexts.forEach(el => el.innerText = "LOG IN");
         }
     });
 
-    // --- PREVIEW IMAGINE ---
-    document.getElementById('fileInput').onchange = (e) => {
-        const file = e.target.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = (ev) => {
-                document.getElementById('imagePreview').src = ev.target.result;
-                document.getElementById('previewWrapper').classList.remove('hidden');
-            }
-            reader.readAsDataURL(file);
-        }
-    };
-
-    window.removeSelectedFile = () => {
-        document.getElementById('fileInput').value = "";
-        document.getElementById('previewWrapper').classList.add('hidden');
-    };
-
-    // --- UPLOAD ---
-    document.getElementById('uploadBtn').onclick = async () => {
-        const file = document.getElementById('fileInput').files[0];
-        const title = document.getElementById('prodName').value;
-        const price = document.getElementById('prodPrice').value;
-        const status = document.getElementById('status');
-
-        if (!file || !title || !price) return alert("Completează tot!");
-
-        const btn = document.getElementById('uploadBtn');
-        btn.disabled = true;
-        status.innerText = "Se procesează...";
-
-        new Compressor(file, {
-            quality: 0.6,
-            success: async (result) => {
-                const sRef = ref(storage, `collections/${COLLECTION_ID}/${Date.now()}_prod`);
-                const uploadTask = uploadBytesResumable(sRef, result);
-
-                uploadTask.on('state_changed', 
-                    (snap) => { status.innerText = `Încărcare: ${Math.round((snap.bytesTransferred/snap.totalBytes)*100)}%`; },
-                    (err) => { alert("Eroare Storage! Verifică regulile."); btn.disabled = false; },
-                    async () => {
-                        const url = await getDownloadURL(uploadTask.snapshot.ref);
-                        await addDoc(collection(db, `products_${COLLECTION_ID}`), {
-                            name: title, price: price, img: url, createdAt: serverTimestamp()
-                        });
-                        location.reload();
-                    }
-                );
-            }
-        });
-    };
-
-    // --- AFIȘARE PRODUSE ---
-    onSnapshot(query(collection(db, `products_${COLLECTION_ID}`), orderBy("createdAt", "desc")), (snap) => {
-        const grid = document.getElementById('productsGrid');
-        grid.innerHTML = '';
-        snap.forEach(docSnap => {
-            const p = docSnap.data();
-            const isAdmin = window.currentUser && ADMIN_EMAILS.includes(window.currentUser.email.toLowerCase());
-            grid.innerHTML += `
-                <div class="product-card p-4 group cursor-pointer reveal-item" onclick="openLightbox('${docSnap.id}')">
-                    <div class="aspect-[4/5] overflow-hidden mb-6 relative">
-                        <img src="${p.img}" class="w-full h-full object-cover img-zoom">
-                        ${isAdmin ? `<button onclick="event.stopPropagation(); window.deleteProd('${docSnap.id}')" class="absolute top-4 right-4 bg-red-600 text-white p-2 text-xs z-30"><i class="fa-solid fa-trash"></i></button>` : ''}
-                    </div>
-                    <div class="text-center">
-                        <h3 class="font-serif italic text-2xl text-brand-ice">${p.name}</h3>
-                        <p class="text-brand-magenta mt-2">${p.price} RON</p>
-                    </div>
-                </div>
-            `;
-        });
-    });
-
-    // --- LIGHTBOX ---
-    window.openLightbox = async (id) => {
-        const docSnap = await getDoc(doc(db, `products_${COLLECTION_ID}`, id));
-        const p = docSnap.data();
-        document.getElementById('lbImg').src = p.img;
-        document.getElementById('lbTitle').innerText = p.name;
-        document.getElementById('lbPrice').innerText = `${p.price} RON`;
-        document.getElementById('waBtn').href = `https://api.whatsapp.com/send?phone=4917675891440&text=Bună! Sunt interesat de ${p.name}`;
+    window.openGallery = (index) => {
+        galleryIdx = index;
+        updateLightbox("Spring Awakening Set", springGallery[galleryIdx]);
         document.getElementById('productLightbox').classList.remove('hidden');
         document.body.style.overflow = 'hidden';
     };
+
+    window.changeImage = (step) => {
+        galleryIdx = (galleryIdx + step + springGallery.length) % springGallery.length;
+        updateLightbox("Spring Awakening Set", springGallery[galleryIdx]);
+    };
+
+    window.openManualLightbox = (imgUrl, title) => {
+        updateLightbox(title, imgUrl);
+        document.getElementById('productLightbox').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    };
+
+    function updateLightbox(title, imgUrl) {
+        document.getElementById('lbImg').src = imgUrl;
+        document.getElementById('lbTitle').innerText = title;
+        document.getElementById('waBtn').href = `https://api.whatsapp.com/send?phone=4917675891440&text=Bună! Sunt interesat de: ${imgUrl}`;
+    }
 
     window.closeLightbox = () => {
         document.getElementById('productLightbox').classList.add('hidden');
         document.body.style.overflow = 'auto';
     };
 
-    // --- DELETE ---
-    let toDelete = null;
-    window.deleteProd = (id) => {
-        toDelete = id;
-        document.getElementById('deleteModal').classList.remove('hidden');
-    };
-    window.closeDeleteModal = () => document.getElementById('deleteModal').classList.add('hidden');
-    document.getElementById('confirmDeleteBtn').onclick = async () => {
-        if(toDelete) await deleteDoc(doc(db, `products_${COLLECTION_ID}`, toDelete));
-        closeDeleteModal();
-    };
+    window.toggleMenu = () => document.getElementById('mobileMenu').classList.toggle('active');
+    window.toggleAuthModal = () => document.getElementById('authModal').classList.toggle('hidden');
+    window.toggleUserModal = () => document.getElementById('userModal').classList.toggle('hidden');
+    window.handleAccountClick = () => window.currentUser ? window.toggleUserModal() : window.toggleAuthModal();
 
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('main-nav');
+        if(nav) window.scrollY > 50 ? nav.classList.add('scrolled') : nav.classList.remove('scrolled');
+    });
 </script>
 
 <!-- SCRIPTS: UI INTERACTIONS -->
